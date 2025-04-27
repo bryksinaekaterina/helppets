@@ -1,4 +1,4 @@
-fetch('http://helppets.infy.uk/wp-json/wp/v2/posts')
+fetch('https://helppets.infy.uk/wp-json/wp/v2/posts')
   .then(response => {
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
