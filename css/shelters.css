@@ -1,0 +1,317 @@
+@font-face {
+    font-family: 'AmaticSC';
+    src: url('../fonts/AmaticSC-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: #F7F0EA;
+}
+header {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3{
+    font-family: 'AmaticSC', sans-serif; 
+}
+
+h1{
+    text-align: center;
+    font-weight: 400;
+    font-size: 128px;
+    padding-bottom: 50px;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    line-height: 1.4em;
+}
+
+h3{
+    font-weight: 400;
+    font-size: 40px;
+}
+
+h5{
+    font-size: 24px;
+    font-weight: 200;
+}
+
+p{
+    margin: 0;
+    line-height: 1.4em;  
+    font-family: 'Montserrat Alternates', sans-serif;;
+}
+
+.p-bold{
+    font-weight: 600;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.top-content{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-top: 20px;
+    width:135px;
+    display:block;
+}
+
+
+
+.navbar {
+    padding: 10px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 54px;
+    display: flex;
+}
+
+.nav-item {
+    position: relative;
+    margin-right: 20px;
+}
+
+.menu-title {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-title:hover {
+    color: #DDA786;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 170px;
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+    border-radius: 13px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    color: #DDA786;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-pic{
+    margin: 0 auto;
+    /* width: 100%; */
+    height: auto;
+    display: block;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+
+.banner-container {
+    justify-content: center;
+    position: relative; /* Позволяет элементам внутри контейнера использовать абсолютное позиционирование */
+    width: 100%;
+    max-width: 100%; /* Устанавливаем максимальную ширину 100% */
+}
+
+
+
+.text-overlay {
+    position: absolute; /* Позволяет размещать текст поверх изображения */
+    top: 50%; /* Позиционируем текст по центру изображения по вертикали */
+    left: 50%; /* Позиционируем текст по центру изображения по горизонтали */
+    transform: translate(-50%, -50%); /* Центрирование текста в контейнере */
+    text-align: center; /* Центрируем текст */
+    padding: 20px; /* Внутренние отступы вокруг текста */
+}
+
+
+
+.logos{
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: space-between; */
+}
+
+
+.shelter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.shelter img{
+    transition: filter 0.3s ease;
+}
+
+.shelter img:hover{
+    filter: opacity(70%);
+}
+
+.shelter h5{
+    padding-top: 10px;
+}
+
+.text{
+    margin: 0 auto;
+    width: 85%;
+}
+
+.text h5{
+    /* width: 85%; */
+    text-align: center;
+    
+}
+
+button{
+    margin: 0 auto;
+    height: 80px;
+    max-width: 240px;
+    width: 100%;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #f48a1a;
+    border: none;
+    border-radius: 10px;
+}
+   
+button:hover{
+    transition: all 0.5s ease;
+    background-color: #DE770B;
+}
+
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer {
+    margin-top: 120px;;
+    background-color: #D8AD92; 
+    border-top-left-radius: 20px; /* Скругление левого верхнего угла */
+    border-top-right-radius: 20px; /* Скругление правого верхнего угла */
+    position: relative; 
+    padding: 75px 0; 
+  }
+  
+.footer-content {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+  
+
+.yarn-thread {
+    position: absolute; 
+    /* top: -122px;  */
+    top:-44%;
+    left: 0; /* Начать от левого края */
+    width: 100%; /* Сделайте ширину изображения 100%, чтобы соответствовать футеру */
+    height: auto; /* Сохранить пропорции изображения */
+    z-index: 10; /* Сделать изображение поверх фона футера */
+}
+  
+.footer-right p{
+    padding-top: 15px;
+}
+
+.footer button{
+    height: 75px;
+    min-width: 285px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    color: #fff;
+    background-color: #5082BD;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+}
+
+.footer button:hover{
+    transition: all 0.5s ease;
+    background-color: #426C9D;
+}
+
+
+.footer h3{
+    padding-bottom: 20px;
+}
+
+.icons{
+    display: flex;
+    gap: 30px;
+}
+
+.icon{
+    opacity: 87%;
+}
+
+.icon:hover{
+    opacity: 100%;
+}
+
+

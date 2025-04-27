@@ -1,0 +1,444 @@
+@font-face {
+    font-family: 'AmaticSC';
+    src: url('../fonts/AmaticSC-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: #F7F0EA;
+}
+header {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3{
+    font-family: 'AmaticSC', sans-serif; 
+}
+
+h1{
+    text-align: center;
+    font-weight: 400;
+    font-size: 128px;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    line-height: 1.4em;
+}
+
+h3{
+    font-weight: 400;
+    font-size: 40px;
+}
+
+p{
+    margin: 0;
+    line-height: 1.4em;  
+    font-family: 'Montserrat Alternates', sans-serif;;
+}
+
+.p-bold{
+    font-weight: 600;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.top-content{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-top: 20px;
+    width:135px;
+    display:block;
+}
+
+
+
+.navbar {
+    padding: 10px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 54px;
+    display: flex;
+}
+
+.nav-item {
+    position: relative;
+    margin-right: 20px;
+}
+
+.menu-title {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-title:hover {
+    color: #DDA786;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 170px;
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+    border-radius: 13px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    color: #DDA786;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+.filters-block{
+    margin: 0 auto;
+    width: 80%;
+} 
+
+/* .filter-caption{
+    padding-top: 30px;
+} */
+
+
+.pet-count{
+    padding-top: 35px;
+    padding-bottom: 15px;
+    text-align: right;
+}
+
+.filter-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    border-radius: 40px; 
+    background-color: #D8AD92;
+    margin: 0 auto; 
+    margin-top: 15px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+/* .filter {
+    width: 181px;
+    padding: 10px;
+    margin: 5px; 
+    background-color:#F7F0EA; 
+    border-radius: 13px; 
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);  */
+/* }
+
+.filter1 {
+    width: px;
+    padding: 10px;
+    margin: 5px; 
+    background-color:#F7F0EA; 
+    border-radius: 13px; 
+}  */
+
+.filter-controls {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 30px; */
+    justify-content: center;
+
+}
+
+
+.clear-button {
+    background: none;
+    border: none;
+    color: rgb(100, 100, 100); /* Или любой другой цвет текста */
+    text-decoration: underline;
+    font-family: 'Montserrat Alternates';
+    cursor: pointer;
+    padding: 0;
+    font-size: 15px; 
+}
+
+.clear-button:hover {
+    color: rgb(15, 15, 15); /* Изменение цвета при наведении, если необходимо */
+}
+
+
+
+.filter {
+    /* margin: 35px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.filter-label {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    display: flex;
+    padding: 10px;
+    min-width: 170px;
+    /* border: 1px solid #ccc; */
+    border-radius: 13px;
+    cursor: pointer;
+    /* background-color: #F7F0EA; */
+    background-color: white;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    /* background-color: #fff;
+    border: 1px solid #ccc; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    /* background-color: #F7F0EA; */
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    color: #D8AD92;
+}
+
+
+
+.checkbox-container {
+    display: flex; 
+    align-items: center;
+    position: relative;
+}
+
+.custom-checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkbox-container label {
+    display: block;
+    width: 39px;
+    height: 39px;
+    border-radius: 12px;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox-container label:after {
+    content: '';
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25px;  
+    height: 25px; 
+    background-image: url('../img/paw.png'); /* Путь до вашего изображения */
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+}
+
+.custom-checkbox:checked + label:after {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+.pagination-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.pagination-container button{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+    border: none;
+    background-color:  #FFFAF4;  
+    cursor: pointer;
+}
+
+
+.pets-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+
+}
+
+.pet-card {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: #fff; 
+}
+
+.pet-card img {
+    width: 100%;
+    display: block; 
+    height: auto; 
+    border-radius: 10px;
+}
+
+
+.pet-info {
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    padding: 10px; 
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    border-radius: 10px;
+}
+
+.pets-cards-item{
+    max-width: 300px;
+    width: 100%;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.pets-cards-item:hover{
+    scale: 1.05;
+}
+
+.pets-cards-item h3{
+    color:#fff;
+} 
+
+
+section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+
+
+
+.footer {
+    background-color: #D8AD92; 
+    border-top-left-radius: 20px; /* Скругление левого верхнего угла */
+    border-top-right-radius: 20px; /* Скругление правого верхнего угла */
+    position: relative; 
+    padding: 75px 0; 
+  }
+  
+.footer-content {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+  
+
+.yarn-thread {
+    position: absolute; 
+    /* top: -122px;  */
+    top:-46%;
+    left: 0; /* Начать от левого края */
+    width: 100%; /* Сделайте ширину изображения 100%, чтобы соответствовать футеру */
+    height: auto; /* Сохранить пропорции изображения */
+    z-index: 10; /* Сделать изображение поверх фона футера */
+}
+  
+.footer-right p{
+    padding-top: 15px;
+}
+
+.footer button{
+    height: 75px;
+    min-width: 285px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    color: #fff;
+    background-color: #5082BD;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+}
+
+.footer button:hover{
+    transition: all 0.5s ease;
+    background-color: #426C9D;
+}

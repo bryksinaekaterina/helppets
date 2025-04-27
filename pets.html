@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/Логотип.png">
+    <title>Помощь бездомным животным</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;800&family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/pets.css">
+</head>
+<body>
+    <header class="header" id="header">   
+        <div class="top-content">
+            <a href="index.html"><img src="img/logo.svg" alt="Логотип 'Друг для Друга'" class="logo"></a>           
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item dropdown">
+                        <span class="menu-title">Питомцы</span>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Ищут дом</a></li>
+                            <li><a href="#">Счастливые истории</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="menu-title">Приюты</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <span class="menu-title">Полезная информация</span>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Полезные статьи</a></li>
+                            <li><a href="#">Зоозащитные организации</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="menu-title">О нас</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>  
+    </header>
+    <main>
+        <section class="filters-block">
+            <div class = "filter-caption">
+                <h1>Питомцы</h1>
+                <p class="pet-count">Животные:999</p>
+            </div>  
+            <div class = "filter-container">
+                <div class="filter-controls">
+                    <h3 class="filter-name">Фильтры</h3>
+                    <button class="clear-button" type="button">Очистить</button>
+                </div>
+                                 
+                <div class="filter">
+                    <label class="filter-label" for="animal-type">Тип животного</label>
+                    <div class="dropdown">
+                        <div class="dropdown-toggle" id="animal-type">Все</div>
+                        <ul class="dropdown-menu">
+                            <li data-value="all">Все</li>
+                            <li data-value="cats">Кошки</li>
+                            <li data-value="dogs">Собаки</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="filter">
+                    <label class="filter-label" for="animal-type">Приют</label>
+                    <div class="dropdown">
+                        <div class="dropdown-toggle" id="animal-type">Все</div>
+                        <ul class="dropdown-menu">
+                            <li data-value="all">Все</li>
+                            <li data-value="shelter1">Hayot</li>
+                            <li data-value="shelter2">Милые кошки</li>
+                            <li data-value="shelter3">Гавчег</li>
+                            <li data-value="shelter4">Mehr</li>
+                            <li data-value="shelter5">Четыре лапы</li>
+                            <li data-value="shelter6">Дом добра</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="filter">
+                    <label class="filter-label" for="custom-checkbox">Срочная помощь</label>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="custom-checkbox" class="custom-checkbox">
+                        <label for="custom-checkbox"></label>
+                    </div>
+                </div>
+            </div>  
+            
+        </section>
+    
+        <section class="cards">
+            <div class="pets-cards container">
+                       
+            </div>  
+            <div class="pagination-container">
+
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-content">
+          <img src="img/клубок-нить.png" alt="Клубок с нитью" class="yarn-thread">
+          <div class="footer-content">
+            <a href="index.html"><img src="img/logo-footer.svg" alt="Логотип 'Друг для Друга'" class="logo"></a>
+            <div class="contacts">
+                <h3>Контакты</h3>
+                <p>+998 93 333-33-33</p>
+                <p>example@email</p>
+            </div>
+            <div class="footer-right">
+                <button>Хочу помочь</button>
+                <p>© 2025. Друг для Друга</p>
+            </div>
+          </div>
+         
+        </div>
+      </footer>
+
+    <script type="module" src="script/searchFilterPagination.js"></script>
+</body>
+</html>

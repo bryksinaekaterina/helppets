@@ -1,0 +1,286 @@
+@font-face {
+    font-family: 'AmaticSC';
+    src: url('../fonts/AmaticSC-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: #F7F0EA;
+}
+header {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3{
+    font-family: 'AmaticSC', sans-serif; 
+}
+
+h1{
+    text-align: center;
+    font-weight: 400;
+    font-size: 128px;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    line-height: 1.4em;
+}
+
+h3{
+    font-weight: 400;
+    font-size: 40px;
+}
+
+p{
+    margin: 0;
+    line-height: 1.4em;  
+    font-family: 'Montserrat Alternates', sans-serif;;
+}
+
+.p-bold{
+    font-weight: 600;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.top{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 150px;
+    margin: 0 auto ;
+}
+
+
+.top-content{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-top: 20px;
+    width:135px;
+    display:block;
+}
+
+
+.navbar {
+    padding: 10px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 54px;
+    display: flex;
+}
+
+.nav-item {
+    position: relative;
+    margin-right: 20px;
+}
+
+.menu-title {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-title:hover {
+    color: #DDA786;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 170px;
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+    border-radius: 13px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    color: #DDA786;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+
+.top-content{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+} 
+
+.logo{
+    margin-top: 20px;
+    width:135px;
+    display:block;
+}
+
+
+
+p, h4 {
+    margin-bottom: 15px; 
+}
+
+
+.inform{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.inform-left{
+    padding-right: 50px;
+}
+
+
+
+button{
+    margin-top: 45px;
+    height: 69px;
+    max-width: 313px;
+    width: 100%;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    color: #fff;
+    background-color: #5082BD;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+}
+   
+button:hover{
+    transition: all 0.5s ease;
+    background-color: #426C9D;
+}
+
+
+
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+footer{
+    background-image: url(../img/bg.png);
+}
+
+
+.footer-container{
+    width: 97%;
+    margin: 0 auto;
+}
+
+.footer-menu{
+    list-style-type: none;
+    padding-bottom: 20px;
+    margin: 0 auto;
+
+}
+
+.footer-menu li{
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.footer-menu a:hover { 
+    color: #ED8F2B;
+}
+
+.footer-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.map{
+    width: 294px;
+    height: 294px;
+}
+
+.email{
+    margin-bottom: 67px;
+}
+
+.help-btn-footer{
+    background: #f48a1a;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    padding: 20px 27px;
+    margin-left: 40px;
+}
+
+.help-btn-footer:hover{
+    background-color: #DE770B;
+}
+
+footer h3{
+    padding-bottom: 20px;
+}
+
+
+.icons{
+    display: flex;
+    gap: 30px;
+}
+
+.icon{
+    opacity: 87%;
+}
+
+.icon:hover{
+    opacity: 100%;
+}
