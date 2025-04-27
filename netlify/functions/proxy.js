@@ -1,35 +1,22 @@
-const fetch = require('node-fetch');  // Импортируем fetch для выполнения HTTP запросов
-
-exports.handler = async (event, context) => {
-  const apiUrl = 'https://helppets.infy.uk/wp-json/wp/v2/posts';  // URL WordPress API
+const handler = async (event, context) => {
+    const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
   
-  try {
-    // Отправляем GET запрос к API WordPress
-    const response = await fetch(apiUrl);
-    
-    // Проверка, если ответ успешный
-    if (!response.ok) {
+    const url = 'https://helppets.infy.uk/wp-json/wp/v2/posts';
+  
+    try {
+      const response = await fetch(url);
+      const posts = await response.json();
+  
       return {
-        statusCode: response.status,
-        body: JSON.stringify({ message: `Ошибка запроса к WordPress API. Статус: ${response.status} `})
+        statusCode: 200,
+        body: JSON.stringify(posts),
+      };
+    } catch (error) {
+      return {
+        statusCode: 500,
+        body: JSON.stringify({ message: 'Error fetching posts', error: error.message }),
       };
     }
-    
-    // Если запрос успешный, получаем данные
-    const data = await response.json();
-    console.log(data);
-    
-    
-    // Возвращаем успешный ответ с данными
-    return {
-      statusCode: 200,
-      body: JSON.stringify(data)
-    };
-  } catch (error) {
-    // Обрабатываем возможные ошибки запроса
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ message: 'Ошибка сервера', error: error.message })
-    };
-  }
-};
+  };
+  
+exports.handler = handler;
