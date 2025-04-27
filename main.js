@@ -1,4 +1,4 @@
-fetch('https://helppets.infy.uk/wp-json/wp/v2/posts')
+fetch('/.netlify/functions/proxy')
   .then(response => {
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
