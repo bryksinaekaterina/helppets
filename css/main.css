@@ -203,22 +203,22 @@ p{
     background-color: #426C9D;
 }
 
-.announcements button{
+/* .announcements button{
     width: 273px;
-}
+} */
 
 .announcements{
     margin: 0 auto;
     width: 85%;
 }
-
+/* 
 .announce-container{
     
     display: flex;
     justify-content: space-around;
-}
+} */
 
-.announce-rect{
+/* .announce-rect{
     border-radius: 20px; 
     background-color: #FBF8F6;
     padding: 30px;
@@ -227,7 +227,7 @@ p{
 
 .announcements button{
     width: 60%;
-}
+} */
 
 
 .design{
@@ -252,10 +252,27 @@ p{
 }
 
 .stories-btn{
-    align-items: center;
+    /* align-items: center; */
+    
 }
 
-
+.button-stories{
+    margin-top: 45px;
+    height: 69px;
+    width: 313px;
+    /* width: 100%; */
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: #fff;
+    background-color: #5082BD;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 20px 50px;
+}
+ 
 
 section{
     padding-top: 50px;
@@ -353,13 +370,96 @@ section{
     }
 
     .buttons{
-        padding-top: 70px;
+        padding-top: 30px;
     }
 
-    .btn{
+    .button{
+        padding: 0;
+        padding-top: 14px;
+    
         width: 164px;
         height: 47px;
         font-size: 14px;
         border-radius: 13px;
+    }
+
+    .button-stories{
+        padding: 15px 10px;
+    }
+
+    .design img{
+        width: 180%;
+    }
+
+    .cat-news img{
+        height: 120px;
+        width: auto;
+    }
+
+    .footer {
+        border-top-left-radius: 50px; 
+        border-top-right-radius: 50px; 
+        position: relative; 
+        padding: 35px 0;
+        padding-bottom: 50px; 
+        overflow-x: hidden;
+      }
+     
+      
+    /* .footer-thread{
+        width: 100%;
+        overflow: hidden;
+    }  */
+
+    .footer-content {
+
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .contacts{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+ 
+    .yarn-thread {
+        position: absolute; 
+        top:-20%;
+        right: 0; 
+        height: 150px;
+        width: auto; 
+        z-index: 10; 
+        position: absolute;
+        left:-10;
+       
+    }
+      
+    .footer-right p{
+        padding-top: 8px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer button{
+        height: 50px;
+        min-width: 202px;
+        font-size: 18px;
+        border-radius: 13px;
+
+    }
+    
+    
+    
+    .footer h3{
+        padding-bottom: 5px;
+    }
+    
+    .social{
+        padding-top: 15px;
+        padding-right: 5px;
     }
 }

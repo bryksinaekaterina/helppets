@@ -13,26 +13,3 @@ document.querySelectorAll('.clinic-block').forEach(block => {
       block.classList.add('active');
   });
 });
-
-
-// document.querySelectorAll('.clinic-block').forEach(block => {
-//   block.addEventListener('click', function () {
-//       const info = this.querySelector('.clinic-info');
-//       const currentMaxHeight = window.getComputedStyle(info).maxHeight;
-
-//       if (currentMaxHeight !== '0px') {
-//           info.style.maxHeight = '0';
-//           block.classList.remove('active');
-//       } else {
-//           // Закрываем другие открытые блоки
-//           document.querySelectorAll('.clinic-info').forEach(inf => {
-//               inf.style.maxHeight = '0';
-//               inf.parentElement.classList.remove('active');
-//           });
-
-//           // Открываем текущий блок и добавляем класс активного
-//           info.style.maxHeight = info.scrollHeight + 'px';
-//           block.classList.add('active');
-//       }
-//   });
-// });

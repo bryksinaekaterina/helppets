@@ -249,17 +249,14 @@ p{
     position: absolute;
     top: 100%;
     left: 0;
-    /* background-color: #fff;
-    border: 1px solid #ccc; */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     list-style: none;
     padding: 0;
     margin: 0;
     z-index: 1000;
-    /* background-color: #F7F0EA; */
 }
 
-.dropdown-menu li {
+.filter li {
     padding: 10px;
     cursor: pointer;
 }
