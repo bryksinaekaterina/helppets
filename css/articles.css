@@ -25,6 +25,7 @@ h1{
     text-align: center;
     font-weight: 400;
     font-size: 128px;
+    padding-bottom: 3%;
 }
 
 h2{
@@ -47,10 +48,19 @@ h3{
     padding-bottom: 35px;
 }
 
+.bold{
+    font-weight: 600;
+}
+
 p{
     margin: 0;
     line-height: 1.4em;  
     font-family: 'Montserrat Alternates', sans-serif;;
+}
+
+h5{
+    font-size: 24px;
+    font-weight: 200;
 }
 
 .p-bold{
@@ -108,7 +118,7 @@ p{
 }
 
 .menu-title {
-    color: white;
+    color: black;
     text-decoration: none;
     display: block;
     padding: 10px 15px;
@@ -152,42 +162,62 @@ p{
 
 
 
-.hero-section {
-    position: relative;
-    width: 100%;
-    height: 100vh; 
-    background-image: url('../img/banner.png');
-    background-size: cover; /* Покрыть весь блок */
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    color: white; /* Белый текст на фоне */
-}
-
-.banner-content{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
+.inception{
     text-align: center;
 }
 
 
-.banner-content p{
-    font-size: 36px;
-    font-weight: 200;
+.blocks {
+    padding-top: 7%;
+    display: flex;
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 13%;
 }
 
-.buttons{
-    display: flex;
-    gap: 30px;
+.block {
+    background-color: #A5C5DB;
+    margin: 10px; 
+    padding: 20px;
+    padding-bottom: 0;
+    flex: 1 1 calc(33.33% - 20px); 
+    box-sizing: border-box;
+    border-radius: 20px;
+    min-width: 250px;
+    position: relative; /* Обязательно для абсолютного позиционирования внутри */
+    overflow: hidden; 
+    height: 210px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
+
+.cat-image {
+    position: absolute;
+    bottom: 0; /* Прижимает к нижнему краю */
+    left: 1;
+    width: 35%; 
+    height: auto; /* Обеспечивает соотношение сторон */
+}
+
+.block h5{
+    text-align: center;
+}
+
+/* 
+.block1 { width: 390px; }
+.block2 { width: 285px; }
+.block3 { width: 495px; }
+.block4 { width: 495px; }
+.block5 { width: 705px; } */
+
+
 
 button{
     margin-top: 45px;
     height: 69px;
-    width: 313px;
+    min-width: 313px;
     width: 100%;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 20px;
@@ -204,37 +234,6 @@ button:hover{
     background-color: #426C9D;
 }
 
-.announcements button{
-    width: 273px;
-}
-
-.announcements{
-    margin: 0 auto;
-    width: 85%;
-}
-
-.announce-container{
-    
-    display: flex;
-    justify-content: space-around;
-}
-
-.announce-rect{
-    border-radius: 20px; 
-    background-color: #FBF8F6;
-    padding: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-}
-
-.announcements button{
-    width: 60%;
-}
-
-
-.design{
-    width: 100%;
-}
-
 
 
 
@@ -244,30 +243,7 @@ section{
 }
 
 
-.how-to-help1{
-    width: 85%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.left-help{
-    display: flex;
-    flex-direction: column;
-}
-
-.point-help{
-    display: flex;
-    align-items: center;
-    margin-bottom: 45px;
-}
-
-.pic-help{
-    width: 90px;
-    height: 90px;
-    margin-right: 30px;
-}
 
 
 
@@ -341,35 +317,31 @@ section{
 
 
 
-
-
-
-
-@media (max-width: 768px) {
-   
-    h1{
-        font-size: 64px;
-    }
-
-    .banner-content p{
-        width: 266px;
-        font-size: 18px;
-    }
-
-    .hero-section {
-        height: 550px;
-        /* width: auto; */
-        background-image: url('../img/banner-mob.png');
-    }
-
-    .buttons{
-        padding-top: 70px;
-    }
-
-    .btn{
-        width: 164px;
-        height: 47px;
-        font-size: 14px;
-        border-radius: 13px;
+/* @media (max-width: 768px) {
+    .block {
+        flex: 1 1 calc(50% - 20px); 
     }
 }
+ */
+
+
+
+/* Медиа-запросы для мобильной версии */
+@media (max-width: 480px) {
+    .block1 { width: 191px; }
+    .block2 { width: 137px; }
+    .block3 { width: 141px; }
+    .block4 { width: 187px; }
+    .block5 { width: 338px; }
+    
+    .blocks {
+        justify-content: space-around; /* Переносим все выравнивание на содержимое */
+    }
+}
+
+
+/* @media (max-width: 1240px) {
+    .footer-container {
+        flex-direction: column;
+    }
+} */

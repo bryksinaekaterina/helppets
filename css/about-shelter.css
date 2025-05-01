@@ -10,7 +10,6 @@ body {
     font-weight: 400;
     font-size: 18px;
     background-color: #F7F0EA;
-    overflow-x: hidden;
 }
 header {
     margin: 0;
@@ -25,6 +24,7 @@ h1{
     text-align: center;
     font-weight: 400;
     font-size: 128px;
+    padding-bottom: 50px;
 }
 
 h2{
@@ -44,7 +44,11 @@ h1, h2, h3, h4, h5, h6{
 h3{
     font-weight: 400;
     font-size: 40px;
-    padding-bottom: 35px;
+}
+
+h5{
+    font-size: 24px;
+    font-weight: 200;
 }
 
 p{
@@ -65,15 +69,6 @@ p{
     margin: 0 auto;
     width: 100%;
 }
-
-
-/* .top{
-    position: absolute;
-    z-index: 10;
-    width: 100%;
-    height: 150px;
-    margin: 0 auto ;
-} */
 
 
 .top-content{
@@ -108,7 +103,7 @@ p{
 }
 
 .menu-title {
-    color: white;
+    color: black;
     text-decoration: none;
     display: block;
     padding: 10px 15px;
@@ -145,141 +140,45 @@ p{
     color: #DDA786;
 }
 
-/* Показываем выпадающее меню при наведении на родителя */
 .dropdown:hover .dropdown-menu {
     display: block;
 }
 
 
 
-.hero-section {
-    position: relative;
-    width: 100%;
-    height: 100vh; 
-    background-image: url('../img/banner.png');
-    background-size: cover; /* Покрыть весь блок */
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    color: white; /* Белый текст на фоне */
-}
 
-.banner-content{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    text-align: center;
-}
-
-
-.banner-content p{
-    font-size: 36px;
-    font-weight: 200;
-}
-
-.buttons{
-    display: flex;
-    gap: 30px;
-}
 
 button{
-    margin-top: 45px;
-    height: 69px;
-    width: 313px;
+    margin: 0 auto;
+    height: 80px;
+    max-width: 240px;
     width: 100%;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 600;
     color: #fff;
-    background-color: #5082BD;
+    background-color: #f48a1a;
     border: none;
-    border-radius: 17px;
-    cursor: pointer;
+    border-radius: 10px;
 }
    
 button:hover{
     transition: all 0.5s ease;
-    background-color: #426C9D;
+    background-color: #DE770B;
 }
-
-.announcements button{
-    width: 273px;
-}
-
-.announcements{
-    margin: 0 auto;
-    width: 85%;
-}
-
-.announce-container{
-    
-    display: flex;
-    justify-content: space-around;
-}
-
-.announce-rect{
-    border-radius: 20px; 
-    background-color: #FBF8F6;
-    padding: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-}
-
-.announcements button{
-    width: 60%;
-}
-
-
-.design{
-    width: 100%;
-}
-
-
-
 
 section{
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-
-.how-to-help1{
-    width: 85%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.left-help{
-    display: flex;
-    flex-direction: column;
-}
-
-.point-help{
-    display: flex;
-    align-items: center;
-    margin-bottom: 45px;
-}
-
-.pic-help{
-    width: 90px;
-    height: 90px;
-    margin-right: 30px;
-}
-
-
-
-
-
 .footer {
+    margin-top: 120px;;
     background-color: #D8AD92; 
-    border-top-left-radius: 20px; 
-    border-top-right-radius: 20px; 
+    border-top-left-radius: 20px; /* Скругление левого верхнего угла */
+    border-top-right-radius: 20px; /* Скругление правого верхнего угла */
     position: relative; 
-    padding: 75px 0;
-    padding-bottom: 50px; 
+    padding: 75px 0; 
   }
   
 .footer-content {
@@ -291,13 +190,16 @@ section{
 }
 
 
+  
+
 .yarn-thread {
     position: absolute; 
-    top:-40%;
-    left: 0; 
-    width: 100%; 
-    height: auto; 
-    z-index: 10; 
+    /* top: -122px;  */
+    top:-44%;
+    left: 0; /* Начать от левого края */
+    width: 100%; /* Сделайте ширину изображения 100%, чтобы соответствовать футеру */
+    height: auto; /* Сохранить пропорции изображения */
+    z-index: 10; /* Сделать изображение поверх фона футера */
 }
   
 .footer-right p{
@@ -315,61 +217,29 @@ section{
     border: none;
     border-radius: 17px;
     cursor: pointer;
-    transition: all 0.5s ease;
 }
 
 .footer button:hover{
+    transition: all 0.5s ease;
     background-color: #426C9D;
 }
 
+
 .footer h3{
-    padding-bottom: 5px;
+    padding-bottom: 20px;
 }
 
-.social{
-    padding-top: 15px;
-    padding-right: 5px;
-    cursor: pointer;
-    transition: all 0.5s ease;
+.icons{
+    display: flex;
+    gap: 30px;
 }
 
-.social:hover{
-    opacity: 85%;
+.icon{
+    opacity: 87%;
+}
+
+.icon:hover{
+    opacity: 100%;
 }
 
 
-
-
-
-
-
-
-
-@media (max-width: 768px) {
-   
-    h1{
-        font-size: 64px;
-    }
-
-    .banner-content p{
-        width: 266px;
-        font-size: 18px;
-    }
-
-    .hero-section {
-        height: 550px;
-        /* width: auto; */
-        background-image: url('../img/banner-mob.png');
-    }
-
-    .buttons{
-        padding-top: 70px;
-    }
-
-    .btn{
-        width: 164px;
-        height: 47px;
-        font-size: 14px;
-        border-radius: 13px;
-    }
-}

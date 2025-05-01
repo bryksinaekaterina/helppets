@@ -1,0 +1,483 @@
+@font-face {
+    font-family: 'AmaticSC';
+    src: url('../fonts/AmaticSC-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: #F7F0EA;
+   
+}
+header {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3{
+    font-family: 'AmaticSC', sans-serif; 
+}
+
+h1{
+    text-align: center;
+    font-weight: 400;
+    font-size: 128px;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+
+
+
+h1, h2, h3, h4, h5{
+    margin: 0;
+    line-height: 1.4em;
+}
+
+h3{
+    font-weight: 400;
+    font-size: 40px;
+}
+
+h5{
+    font-size: 24px;
+    font-weight: 200;
+}
+
+p{
+    margin: 0;
+    line-height: 1.4em;  
+    font-family: 'Montserrat Alternates', sans-serif;;
+}
+
+.p-bold{
+    font-weight: 600;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.top-content{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin-top: 20px;
+    width:135px;
+    display:block;
+}
+
+
+
+.navbar {
+    padding: 10px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 54px;
+    display: flex;
+}
+
+.nav-item {
+    position: relative;
+    margin-right: 20px;
+}
+
+.menu-title {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-title:hover {
+    color: #DDA786;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 170px;
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+    border-radius: 13px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    color: #DDA786;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+.banner {
+    display: flex;
+    padding: 50px;
+}
+
+
+.banner h1{
+    padding-left: 10%;
+}
+
+.bold h5{
+    font-weight: 600;
+}
+
+
+.content {
+    position: relative; 
+    width: 85%;
+    max-width: 1018px;
+    margin: 0 auto; 
+}
+
+.text-rectangle {
+    background-color: #DEBBA4;
+    padding: 50px 200px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.dog-image {
+    position: absolute;
+    right: 0;
+    top: -87%;    
+    z-index: 2; 
+}
+
+
+.point{
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    gap: 10%;
+    width: 85%;
+    padding-bottom: 90px;
+}
+
+.point-text{
+    justify-content: start;
+}
+
+.point img{
+    border-radius: 10px;
+}
+
+
+.point h5{
+    font-weight: 600;
+    text-decoration: underline;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+p{
+    padding-bottom: 10px;
+}
+
+a{
+    color: black;
+}
+
+
+.bulleted-list {
+    list-style-type: circle; 
+}
+
+.bulleted-list li {
+    margin-bottom: 10px; 
+    line-height: 1.4em;
+}
+
+.thank{
+    width: 55%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.thank h5{
+    font-weight: 600;
+    text-align: center;
+}
+
+.thank h3{
+    text-align: center;
+    padding-top: 5px;
+}
+
+
+
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.footer {
+    background-color: #D8AD92; 
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px; 
+    position: relative; 
+    padding: 75px 0;
+    padding-bottom: 50px; 
+  }
+  
+.footer-content {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.yarn-thread {
+    position: absolute; 
+    top:-38%;
+    left: 0; 
+    width: 100%; 
+    height: auto; 
+    z-index: 10; 
+}
+  
+.footer-right p{
+    padding-top: 15px;
+}
+
+.footer button{
+    height: 75px;
+    min-width: 285px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    color: #fff;
+    background-color: #5082BD;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.footer button:hover{
+    background-color: #426C9D;
+}
+
+.footer h3{
+    padding-bottom: 5px;
+}
+
+.social{
+    padding-top: 15px;
+    padding-right: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.social:hover{
+    opacity: 85%;
+}
+
+.footer-thread {
+   
+    overflow: hidden;
+}
+
+
+
+@media (max-width: 768px) {
+   
+    body{
+        overflow-x: hidden;
+      
+    }
+
+    h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 64px;
+        padding-bottom: 150px;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+
+    p{
+        font-size: 13px;
+        padding-top: 0;
+    }
+
+    h3{
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+
+    h5{
+        font-size: 18px;
+    }
+
+    .banner {
+        padding: 0;
+        text-align: center;
+        align-items: center;
+    } 
+
+
+    .points{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 85%;
+    }
+
+    .text-rectangle {
+        padding: 30px;
+        border-radius: 20px;
+    }
+
+    .dog-image {
+        margin: 0 auto;
+        top: -45%;
+        width: 261px;
+    }
+
+    .point img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .point {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+  
+
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .thank {
+        width: 95%;
+    } 
+
+    section{
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+
+
+    .footer {
+        border-top-left-radius: 50px; 
+        border-top-right-radius: 50px; 
+        position: relative; 
+        padding: 35px 0;
+        padding-bottom: 50px; 
+        overflow-x: hidden;
+      }
+     
+      
+    /* .footer-thread{
+        width: 100%;
+        overflow: hidden;
+    }  */
+
+    .footer-content {
+
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .contacts{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+ 
+    .yarn-thread {
+        position: absolute; 
+        top:-20%;
+        right: 0; 
+        height: 150px;
+        width: auto; 
+        z-index: 10; 
+        position: absolute;
+        left:-10;
+       
+    }
+      
+    .footer-right p{
+        padding-top: 8px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer button{
+        height: 50px;
+        min-width: 202px;
+        font-size: 18px;
+        border-radius: 13px;
+
+    }
+    
+    
+    
+    .footer h3{
+        padding-bottom: 5px;
+    }
+    
+    .social{
+        padding-top: 15px;
+        padding-right: 5px;
+    }
+}
+
