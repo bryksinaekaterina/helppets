@@ -59,7 +59,8 @@ p{
 }
 
 h4{
-    font-style: 32px;
+    font-size: 32px;
+    font-weight: 200;
 }
 
 h5{
@@ -204,7 +205,7 @@ h5{
     margin: 0 auto;
 }
 
-.vet{
+/* .vet{
     background-color: #FFF8F2; 
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
     border-radius: 20px; 
@@ -226,7 +227,7 @@ h5{
     left: 1;
     width: 35%; 
     height: auto; 
-} 
+}  */
 
 .block h5{
     text-align: center;
@@ -335,34 +336,201 @@ section{
 }
 
 
-
-
-
-/* @media (max-width: 768px) {
-    .block {
-        flex: 1 1 calc(50% - 20px); 
-    }
+.clinic-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
 }
- */
-
-
-
-/* Медиа-запросы для мобильной версии */
-@media (max-width: 480px) {
-    .block1 { width: 191px; }
-    .block2 { width: 137px; }
-    .block3 { width: 141px; }
-    .block4 { width: 187px; }
-    .block5 { width: 338px; }
-    
-    .blocks {
-        justify-content: space-around; /* Переносим все выравнивание на содержимое */
-    }
+  
+.clinic-block {
+    background-color: #FFF8F2;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    border-radius: 20px; 
+    padding: 35px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+  
+.clinic-block:hover,
+.clinic-block.active {
+    background-color: #FFFDFC;
 }
 
+  /* .clinic-block:hover {
+    background-color: #f0f0f0;
+  } */
+  
 
-/* @media (max-width: 1240px) {
-    .footer-container {
-        flex-direction: column;
-    }
+/* .vet-caption{
+    display: flex;
+    flex-direction: row;
 } */
+
+
+.h5-bold{
+    font-weight: 600;
+}
+
+.info-left p{
+    padding-top: 8px;
+}
+
+.info-point{
+    padding-top: 8px;
+}
+
+.clinic-info {
+    display: none;
+    margin-top: 10px;
+    transition: max-height 0.3s ease-out;
+}
+  
+.map iframe {
+    padding-top: 15px;
+    width: 100%;
+    height: 200px;
+}
+  
+@media (max-width: 768px) {
+   
+    body{
+        overflow-x: hidden;
+      
+    }
+
+    h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 64px;
+        padding-bottom: 35px;
+        text-align: center;
+        line-height: 1.4em;
+    }
+
+    h2{
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+
+    p{
+        font-size: 13px;
+        padding-top: 0;
+    }
+
+    h3{
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+
+    h5{
+        font-size: 18px;
+    }
+
+    .clinic-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;  
+    }
+
+    .blocks{
+        padding-top: 25px;
+    }
+
+    .design{
+        width: 180%;
+    }
+
+    .clinic-block {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 15px; 
+        /* padding: 15px 30px; */
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: space-between;
+        margin-bottom: 30px; */
+    }
+
+    section{
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+
+
+    .footer {
+        border-top-left-radius: 50px; 
+        border-top-right-radius: 50px; 
+        position: relative; 
+        padding: 35px 0;
+        padding-bottom: 50px; 
+        overflow-x: hidden;
+      }
+     
+      
+    /* .footer-thread{
+        width: 100%;
+        overflow: hidden;
+    }  */
+
+    .footer-content {
+
+        flex-direction: column;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .contacts{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+ 
+    .yarn-thread {
+        position: absolute; 
+        top:-20%;
+        right: 0; 
+        height: 150px;
+        width: auto; 
+        z-index: 10; 
+        position: absolute;
+        left:-10;
+       
+    }
+      
+    .footer-right p{
+        padding-top: 8px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer button{
+        height: 50px;
+        min-width: 202px;
+        font-size: 18px;
+        border-radius: 13px;
+
+    }
+    
+    
+    
+    .footer h3{
+        padding-bottom: 5px;
+    }
+    
+    .social{
+        padding-top: 15px;
+        padding-right: 5px;
+    }
+}
+
+
+
