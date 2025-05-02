@@ -342,10 +342,10 @@ section{
 
 
 /*Меню-бургер*/
-.navbar {
+/* .navbar {
     display: none;
     position: absolute;
-    top: 70px; /* Adjust based on your layout */
+    top: 70px; 
     left: 0;
     width: 100%;
     background-color: white;
@@ -374,17 +374,14 @@ section{
 }
 
 .dropdown-menu {
-    position: static; /* Сделать меню статичным, чтобы оно не перекрывало другие элементы */
-}
+    position: static; }
 
 .dropdown-menu.active {
     display: block;
-    margin-bottom: 10px; /* Проверить высоту, чтобы другие элементы опускались ниже */
-}
+    margin-bottom: 10px; 
+} */
 
 
-
-/*2*/
 .burger-menu {
     display: none;
     flex-direction: column;
@@ -400,14 +397,9 @@ section{
 }
 
 .navbar {
-    position: fixed;
     top: 0;
-    right: -250px; /* расстояние, равное ширине меню */
-    width: 250px;
     height: 100%;
-    background-color: white;
     padding: 20px;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
     transition: right 0.3s ease-in-out;
     z-index: 20;
 }
@@ -562,8 +554,6 @@ section{
         padding-bottom: 50px;
     }
 
-  
-
     .container {
         width: 100%;
         padding: 0 10px;
@@ -589,18 +579,12 @@ section{
       }
      
       
-    /* .footer-thread{
-        width: 100%;
-        overflow: hidden;
-    }  */
 
     .footer-content {
-
         flex-direction: column;
         gap: 30px;
         justify-content: center;
-        align-items: center;
-       
+        align-items: center; 
     }
 
     .contacts{
@@ -644,6 +628,78 @@ section{
     .social{
         padding-top: 15px;
         padding-right: 5px;
+    }
+
+
+    @media (min-width: 781px) {
+        .navbar {
+            display: flex;
+            position: static;
+            width: auto;
+            height: auto;
+            box-shadow: none;
+            padding: 0;
+            flex-direction: row;
+        }
+    
+        .burger-menu {
+            display: none;
+        }
+    
+        .nav-menu {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    
+        .nav-item {
+            margin-right: 20px;
+        }
+    
+        .nav-item:last-child {
+            margin-right: 0;
+        }
+
+        .navbar {
+            display: none;
+            position: absolute;
+            top: 70px; 
+            left: 0;
+            width: 100%;
+            background-color: white;
+            padding: 10px 0;
+            z-index: 10;
+        }
+        
+        .nav-menu {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 0;
+        }
+        
+        .nav-item {
+            margin-bottom: 10px;
+        }
+        
+        .burger-menu {
+            display: flex;
+        }
+        
+        
+        .navbar.active {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .dropdown-menu {
+            position: static; }
+        
+        .dropdown-menu.active {
+            display: block;
+            margin-bottom: 10px; 
+        }
     }
 }
 
