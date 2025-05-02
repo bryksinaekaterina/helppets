@@ -469,7 +469,7 @@ section{
     .navbar {
         display: none;
         position: absolute;
-        right: 0;
+        left: 0;
         width: 70%;
         background-color: #FFFDFC;
         padding: 10px 0;
@@ -631,7 +631,7 @@ section{
     }
 
 
-    @media (min-width: 781px) {
+    /* @media (min-width: 781px) {
         .navbar {
             display: flex;
             position: static;
@@ -700,6 +700,6 @@ section{
             display: block;
             margin-bottom: 10px; 
         }
-    }
+    } */
 }
 

@@ -455,8 +455,8 @@ a{
     .navbar {
         display: none;
         position: absolute;
-        right: 0;
-        width: 70%;
+        left: 0;
+        width: 75%;
         background-color: #FFFDFC;
         padding: 10px 0;
         z-index: 10;
@@ -578,7 +578,7 @@ a{
     }
 
 
-    .navbar {
+    /* .navbar {
         display: none;
         position: absolute;
         top: 70px; 
@@ -616,7 +616,7 @@ a{
     .dropdown-menu.active {
         display: block;
         margin-bottom: 10px; 
-    }
+    } */
 }
 
 /* @media (max-width: 1240px) {

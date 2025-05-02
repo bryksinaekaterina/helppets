@@ -546,8 +546,8 @@ section{
     .navbar {
         display: none;
         position: absolute;
-        right: 0;
-        width: 70%;
+        left: 0;
+        width: 75%;
         background-color: #FFFDFC;
         padding: 10px 0;
         z-index: 10;
@@ -675,7 +675,7 @@ section{
         padding-right: 5px;
     }
 
-    .navbar {
+    /* .navbar {
         display: none;
         position: absolute;
         top: 70px; 
@@ -713,7 +713,7 @@ section{
     .dropdown-menu.active {
         display: block;
         margin-bottom: 10px; 
-    }
+    } */
 }
 
     

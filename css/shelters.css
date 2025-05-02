@@ -409,51 +409,7 @@ section{
         padding-bottom: 25px;
     }
     
-   /*Меню-бургер*/
-   .navbar {
-    display: none;
-    position: absolute;
-    right: 0;
-    width: 70%;
-    background-color: #FFFDFC;
-    padding: 10px 0;
-    z-index: 10;
-    }
-
-    .nav-menu {
-        padding-top: 20px;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 0;
-    }
-
-    .nav-item {
-        margin-bottom: 10px;
-    }
-
-    .burger-menu {
-        display: flex;
-    }
-
-    .navbar.active {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .dropdown-menu {
-        position: static; /* Сделать меню статичным, чтобы оно не перекрывало другие элементы */
-    }
-
-    .dropdown-menu.active {
-        display: block;
-        margin-bottom: 10px; /* Проверить высоту, чтобы другие элементы опускались ниже */
-    }
-
-    /*2*/
-
-    .burger-menu {
-        display: flex;
-    }
+  
 
     /*Меню-бургер*/
 
@@ -539,44 +495,52 @@ section{
         padding-right: 5px;
     }
 
-    .navbar {
-        display: none;
-        position: absolute;
-        top: 70px; 
-        left: 0;
-        width: 100%;
-        background-color: white;
-        padding: 10px 0;
-        z-index: 10;
-    }
     
+    
+     /*Меню-бургер*/
+   .navbar {
+    display: none;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 75%;
+    background-color: #FFFDFC;
+    padding: 10px 0;
+    z-index: 10;
+    }
+
     .nav-menu {
+        padding-top: 20px;
         flex-direction: column;
         align-items: flex-start;
         margin-top: 0;
     }
-    
+
     .nav-item {
         margin-bottom: 10px;
     }
-    
+
     .burger-menu {
         display: flex;
     }
-    
-    
+
     .navbar.active {
         display: flex;
         flex-direction: column;
     }
-    
+
     .dropdown-menu {
-        position: static; 
+        position: static; /* Сделать меню статичным, чтобы оно не перекрывало другие элементы */
     }
-    
+
     .dropdown-menu.active {
         display: block;
-        margin-bottom: 10px; 
+        margin-bottom: 10px; /* Проверить высоту, чтобы другие элементы опускались ниже */
     }
-    
+
+    /*2*/
+
+    .burger-menu {
+        display: flex;
+    }
 }
