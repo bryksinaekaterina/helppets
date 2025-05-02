@@ -13,8 +13,14 @@
 </head>
 <body>
     <header class="header" id="header">   
+        <div class="overlay" id="overlay"></div>
         <div class="top-content">
-            <a href="index.html"><img src="img/Logo-orange.svg" alt="Логотип 'Друг для Друга'" class="logo"></a>           
+            <a href="index.html"><img src="img/Logo-orange.svg" alt="Логотип 'Друг для Друга'" class="logo"></a>
+            <div class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <nav class="navbar">
                 <ul class="nav-menu">
                     <li class="nav-item dropdown">
@@ -43,8 +49,7 @@
                     </li>
                 </ul>
             </nav>
-
-        </div>  
+        </div>
     </header>
     <main>
         <section class="filters-block">
@@ -129,6 +134,7 @@
         </div>  
       </footer>
 
-    <script type="module" src="script/searchFilterPagination.js"></script>
+      <script src="script/burger1.js"></script>
+    <!-- <script type="module" src="script/searchFilterPagination.js"></script> -->
 </body>
 </html>

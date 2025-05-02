@@ -16,34 +16,43 @@
 </head>
 <body>
     <header class="header" id="header">   
+        <div class="overlay" id="overlay"></div>
         <div class="top-content">
-            <a href="index.html"><img src="img/logo.svg" alt="Логотип 'Друг для Друга'" class="logo"></a>           
+            <a href="index.html"><img src="img/Logo-orange.svg" alt="Логотип 'Друг для Друга'" class="logo"></a>
+            <div class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <nav class="navbar">
                 <ul class="nav-menu">
                     <li class="nav-item dropdown">
                         <span class="menu-title">Питомцы</span>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Ищут дом</a></li>
-                            <li><a href="#">Счастливые истории</a></li>
+                            <li><a href="pets.html">Ищут дом</a></li>
+                            <li><a href="happy-stories.html">Счастливые истории</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="menu-title">Приюты</a>
+                        <a href="shelters.html" class="menu-title">Приюты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="how-to-help.html" class="menu-title">Как помочь?</a>
                     </li>
                     <li class="nav-item dropdown">
                         <span class="menu-title">Полезная информация</span>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Полезные статьи</a></li>
-                            <li><a href="#">Зоозащитные организации</a></li>
+                            <li><a href="vetclinics.html">Ветеринарные клиники</a></li>
+                            <li><a href="articles.html">Полезные статьи</a></li>
+                            <li><a href="zoo-organizations.html">Зоозащитные организации</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="menu-title">О нас</a>
+                        <a href="about-us.html" class="menu-title">О нас</a>
                     </li>
                 </ul>
             </nav>
-
-        </div>  
+        </div>
     </header>
    
     <main>
@@ -121,7 +130,8 @@
         </div>  
       </footer>
 
-    <script type="module" src="./script/form.js"></script> 
-    <script type="module" src="./script/scroll.js"></script> 
+      <script src="script/burger1.js"></script>
+    <!-- <script type="module" src="./script/form.js"></script> 
+    <script type="module" src="./script/scroll.js"></script>  -->
 </body>
 </html>

@@ -292,7 +292,102 @@ section{
     opacity: 100%;
 }
 
+/*Меню-бургер*/
+.navbar {
+    display: none;
+    position: absolute;
+    top: 70px; /* Adjust based on your layout */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px 0;
+    z-index: 10;
+}
 
+.nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+}
+
+.nav-item {
+    margin-bottom: 10px;
+}
+
+.burger-menu {
+    display: flex;
+}
+
+
+.navbar.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-menu {
+    position: static; /* Сделать меню статичным, чтобы оно не перекрывало другие элементы */
+}
+
+.dropdown-menu.active {
+    display: block;
+    margin-bottom: 10px; /* Проверить высоту, чтобы другие элементы опускались ниже */
+}
+
+
+
+/*2*/
+.burger-menu {
+    padding-top: 50px;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    background-color: black;
+    height: 3px;
+    width: 25px;
+    margin: 4px;
+    transition: all 0.3s;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* расстояние, равное ширине меню */
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s ease-in-out;
+    z-index: 20;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 10;
+}
+
+
+.navbar.active {
+    right: 0;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*Меню-бургер*/
 
 
 
@@ -305,17 +400,72 @@ section{
         font-size: 18px;
     }
 
+    h3{
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 13px;
+    }
+
     section{
         padding-top: 25px;
         padding-bottom: 25px;
     }
     
+   /*Меню-бургер*/
+   .navbar {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 70%;
+    background-color: #FFFDFC;
+    padding: 10px 0;
+    z-index: 10;
+    }
+
+    .nav-menu {
+        padding-top: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown-menu {
+        position: static; /* Сделать меню статичным, чтобы оно не перекрывало другие элементы */
+    }
+
+    .dropdown-menu.active {
+        display: block;
+        margin-bottom: 10px; /* Проверить высоту, чтобы другие элементы опускались ниже */
+    }
+
+    /*2*/
+
+    .burger-menu {
+        display: flex;
+    }
+
+    /*Меню-бургер*/
 
     .pic {
         width: 85%;
         /* height: 250px; */
         margin: 0 auto;
-        background-image: url('../img/still-life-pet-food-assortment.png');
+        background-image: url('../img/still-life-pet-food-assortment.png') no-repeat center center;
         padding: 50px 200px;
         border-radius: 40px;
         z-index: 1;
@@ -333,18 +483,22 @@ section{
         border-top-right-radius: 50px; 
         position: relative; 
         padding: 35px 0;
-        padding-bottom: 50px; 
+        padding-bottom: 35px; 
         overflow-x: hidden;
       }
-     
-      
+    
+   
     .footer-content {
 
         flex-direction: column;
-        gap: 30px;
+        gap: 20px;
         justify-content: center;
         align-items: center;
        
+    }
+
+    .footer-right p{
+        padding-top: 10px;
     }
 
     .contacts{
@@ -376,11 +530,10 @@ section{
         min-width: 202px;
         font-size: 18px;
         border-radius: 13px;
+        margin-bottom: 10px;
 
     }
-    
-    
-    
+       
     .footer h3{
         padding-bottom: 5px;
     }
