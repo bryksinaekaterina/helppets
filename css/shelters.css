@@ -149,36 +149,31 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
+   
 }
 
-.banner-pic{
+
+
+.pic {
+    width: 1018px;
+    height: 219px;
     margin: 0 auto;
-    /* width: 100%; */
-    height: auto;
-    display: block;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    background-image: url('../img/приюты-баннер.png');
+    padding: 50px 200px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
 }
-
-
-
-
-.banner-container {
-    justify-content: center;
-    position: relative; /* Позволяет элементам внутри контейнера использовать абсолютное позиционирование */
-    width: 100%;
-    max-width: 100%; /* Устанавливаем максимальную ширину 100% */
-}
-
 
 
 .text-overlay {
-    position: absolute; /* Позволяет размещать текст поверх изображения */
-    top: 50%; /* Позиционируем текст по центру изображения по вертикали */
-    left: 50%; /* Позиционируем текст по центру изображения по горизонтали */
-    transform: translate(-50%, -50%); /* Центрирование текста в контейнере */
-    text-align: center; /* Центрируем текст */
-    padding: 20px; /* Внутренние отступы вокруг текста */
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    padding: 20px; 
 }
 
 
@@ -220,24 +215,7 @@ p{
     
 }
 
-button{
-    margin: 0 auto;
-    height: 80px;
-    max-width: 240px;
-    width: 100%;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: #fff;
-    background-color: #f48a1a;
-    border: none;
-    border-radius: 10px;
-}
-   
-button:hover{
-    transition: all 0.5s ease;
-    background-color: #DE770B;
-}
+
 
 section{
     padding-top: 50px;
@@ -323,5 +301,90 @@ section{
     h1{
         font-size: 64px;
     }
+    h5{
+        font-size: 18px;
+    }
 
+    section{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+
+    .pic {
+        width: 85%;
+        /* height: 250px; */
+        margin: 0 auto;
+        background-image: url('../img/still-life-pet-food-assortment.png');
+        padding: 50px 200px;
+        border-radius: 40px;
+        z-index: 1;
+    }
+    
+    .logos{
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        margin-top: 35px;
+        border-top-left-radius: 50px; 
+        border-top-right-radius: 50px; 
+        position: relative; 
+        padding: 35px 0;
+        padding-bottom: 50px; 
+        overflow-x: hidden;
+      }
+     
+      
+    .footer-content {
+
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .contacts{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+ 
+    .yarn-thread {
+        position: absolute; 
+        top:-20%;
+        right: 0; 
+        height: 150px;
+        width: auto; 
+        z-index: 10; 
+        position: absolute;
+        left:-10;
+       
+    }
+      
+    .footer-right p{
+        padding-top: 8px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer button{
+        height: 50px;
+        min-width: 202px;
+        font-size: 18px;
+        border-radius: 13px;
+
+    }
+    
+    
+    
+    .footer h3{
+        padding-bottom: 5px;
+    }
+    
+    .social{
+        padding-top: 15px;
+        padding-right: 5px;
+    }
 }
