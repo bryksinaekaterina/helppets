@@ -24,12 +24,14 @@ h1{
     text-align: center;
     font-weight: 400;
     font-size: 128px;
+    padding-bottom: 35px;
 }
 
 h2{
     font-weight: 400;
     font-size: 75px;
     padding-bottom: 25px;
+    margin: 0 auto;
 }
 
 
@@ -165,20 +167,6 @@ p{
 }
 
 
-/* .cat{
-    position: absolute;
-    bottom: 0; 
-    right: 1;
-    left: 1;
-    width: 15%; 
-    height: auto;
-} */
-
-
-/* .banner{
-    margin: 0 auto;
-    width: 85%;
-} */
 
 
 .content {
@@ -190,8 +178,9 @@ p{
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     position: relative;
     z-index: 1;
+    width: 85%;
+    margin: 0 auto;
 }
-
 
 
 
@@ -204,6 +193,8 @@ p{
 
 .mission{
     display: flex;
+    width: 85%;
+    margin: 0 auto;
 }
 
 .mission-rect {
@@ -219,17 +210,37 @@ p{
     position: relative;
     z-index: 1;
     right: 0;
+    margin-bottom: 100px;
 }
 
-
+.aims{
+    width: 85%;
+    margin: 0 auto;
+}
 .aims-container {
-    position: relative; /* Относительное позиционирование контейнера */
+    position: relative; 
+    margin-bottom: 350px;
 }
+
+
+.projects-aims{
+    position: relative; /* Сделает возможным абсолютное позиционирование дочерних элементов */
+}
+
+.img-rolling {
+    position: absolute;
+    /* width: 50px;  */
+    /* height: auto;  */
+    top: -220px;
+}
+
+
+
 
 .block {
-    position: absolute; /* Абсолютное позиционирование для каскадного размещения */
-    width: 363px; /* Ширина блока может быть любая по вашему усмотрению */
-    /* padding: 20px; */
+    display: flex;
+    position: absolute; 
+    width: 363px; 
 }
 
 .block:nth-child(1) {
@@ -247,17 +258,31 @@ p{
     left: 836px; /* Смещение по горизонтали справа от второго блока */
 }
 
+.paw{
+    margin-top: 3px;
+    width: 19px;
+    height: 18px;
+}
+
+
+
+.connect{
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
 
 
 section{
     padding-top: 50px;
     padding-bottom: 50px;
-    width: 85%;
-    margin: 0 auto;
+    overflow-x: hidden;
+
 }
 
 
 .footer {
+    /* margin-top: 450px; */
     background-color: #D8AD92; 
     border-top-left-radius: 20px; 
     border-top-right-radius: 20px; 
