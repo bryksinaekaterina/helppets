@@ -626,7 +626,7 @@ section{
     }
 
     .aims{
-        margin-top: 80px;
+        margin-top: 85px;
     }
     
     .aims-container{
@@ -652,7 +652,7 @@ section{
     position: absolute;
     width: 210%; 
     /* height: auto;  */
-    top: -170px;
+    top: -160px;
     right: 0;
 }
 
