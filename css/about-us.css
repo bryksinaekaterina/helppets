@@ -143,45 +143,60 @@ p{
 }
 
 
-
-.banner {
-    display: flex;
-    padding: 50px;
+.content h5{
+    padding-bottom: 15px;
 }
 
-
-.banner h1{
-    padding-left: 10%;
-}
 
 .bold h5{
     font-weight: 600;
 }
 
+.dog{
+    border-radius: 40px;
+    object-fit: cover; /* Делаем так, чтобы картинка полностью покрывала доступное пространство */
+    height: 100%; /* Картинка остается прижатой к верхнему и нижнему краю */
+    align-self: flex-start; /* Прижимает к верхнему краю */
+}
 
 .content {
     position: relative; 
     width: 85%;
     max-width: 1018px;
     margin: 0 auto; 
+    display: flex;
 }
 
-.text-rectangle {
+
+.content {
+    background-color: #95C7DF;
+    /* padding: 50px 200px; */
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+}
+/* .text-rectangle {
     background-color: #95C7DF;
     padding: 50px 200px;
     border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     position: relative;
     z-index: 1;
-}
+} */
 
 .dog-image {
+    height: 100%;
     position: absolute;
-    right: 0;
-    top: -87%;    
+    left: 0;
+    top: 0;    
     z-index: 2; 
 }
 
+.text-rectangle{
+    padding-top: 70px;
+    padding-right: 30px;
+}
 
 .point{
     align-items: center;
@@ -314,18 +329,71 @@ section{
     opacity: 85%;
 }
 
+/*Меню-бургер*/
+.burger-menu {
+    padding-top: 50px;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    background-color: black;
+    height: 3px;
+    width: 25px;
+    margin: 4px;
+    transition: all 0.3s;
+}
+
+.navbar {
+    top: 0;
+    height: 100%;
+    padding: 20px;
+    transition: right 0.3s ease-in-out;
+    z-index: 20;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 10;
+}
+
+
+.navbar.active {
+    right: 0;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*Меню-бургер*/
 
 
 
-@media (max-width: 480px) {
-
-    main{
-        margin: 0 auto;
+@media (max-width: 768px) {
+   
+    body{
+        overflow-x: hidden;
+      
     }
-    
+
     h1 {
+        /* width: 100%; */
+        padding: 0;
+        margin: 0;
         font-size: 64px;
-        padding-bottom: 100px;
+        /* padding-bottom: 150px; */
         text-align: center;
     }
 
@@ -348,48 +416,92 @@ section{
         font-size: 18px;
     }
 
-    .banner {
-        padding: 20px;
+
+    /*Меню-бургер*/
+    .navbar {
+        display: none;
+        position: absolute;
+        /* top: 70px;  */
+        left: 0;
+        /* right: 0; */
+        width: 75%;
+        background-color: #FFFDFC;
+        padding: 10px 0;
+        z-index: 10;
     }
 
-    /* .h1, .h2, .h3 {
-        font-size: 24px;
-    } */
+    .nav-menu {
+        padding-top: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0;
+    }
 
-    .points{
+    .nav-item {
+        margin-bottom: 10px;
+    }
+    
+    .burger-menu {
+        display: flex;
+    }
+
+
+    .navbar.active {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
     }
 
-    .text-rectangle {
-        padding: 30px;
-        border-radius: 20px;
+    .dropdown-menu {
+        position: static; /* Сделать меню статичным, чтобы оно не перекрывало другие элементы */
     }
 
-    .dog-image {
-        margin: 0 auto;
-        top: -25%;
-        width: 261px;
+    .dropdown-menu.active {
+        display: block;
+        margin-bottom: 10px; /* Проверить высоту, чтобы другие элементы опускались ниже */
     }
 
-    .point img {
-        width: 100%;
-        max-width: 500px;
+    /*2*/
+
+    .burger-menu {
+        display: flex;
     }
 
-    .point {
+/*Меню-бургер*/
+
+
+    .banner {
+        width: 337px;
+        height: 410px;
+        padding: 0;
+        padding-top: 15px;
         flex-direction: column;
-        gap: 20px;
-        width: 100%;
+        margin: 0 auto;
+        border-radius: 40px;
+    }
+
+   
+    .black-dog {
+        margin-left: 30px;
+        height: 250px; 
+        width: auto;
+    }
+    
+    .org-info{
+        /* padding-top: 50px;
+        display: flex;
+        gap: 100px;
+        align-items: center; */
+        flex-direction: column;
+        gap: 25px;
         padding-bottom: 50px;
     }
-
-    /* .point h5 {
-        font-size: 18px;
-    } */
+    
+    .org img{
+        /* height: 370px;
+        width: auto; */
+        padding: 0;
+        margin: 0;
+    }
 
     .container {
         width: 100%;
@@ -398,10 +510,80 @@ section{
 
     .thank {
         width: 95%;
-    }
+    } 
 
     section{
         padding-bottom: 25px;
         padding-top: 25px;
     }
+
+
+    .footer {
+        border-top-left-radius: 50px; 
+        border-top-right-radius: 50px; 
+        position: relative; 
+        padding: 35px 0;
+        padding-bottom: 50px; 
+        overflow-x: hidden;
+      }
+     
+      
+    /* .footer-thread{
+        width: 100%;
+        overflow: hidden;
+    }  */
+
+    .footer-content {
+
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .contacts{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+ 
+    .yarn-thread {
+        position: absolute; 
+        top:-20%;
+        right: 0; 
+        height: 150px;
+        width: auto; 
+        z-index: 10; 
+        position: absolute;
+        left:-10;
+       
+    }
+      
+    .footer-right p{
+        padding-top: 8px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer button{
+        height: 50px;
+        min-width: 202px;
+        font-size: 18px;
+        border-radius: 13px;
+
+    }
+    
+    
+    
+    .footer h3{
+        padding-bottom: 5px;
+    }
+    
+    .social{
+        padding-top: 15px;
+        padding-right: 5px;
+    }    
+
 }
+

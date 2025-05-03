@@ -9,41 +9,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800&family=Montserrat:wght@900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/how-to-help.css">
+    <link rel="stylesheet" href="css/about-us.css">
     <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
 </head>
 <body>
     <header class="header" id="header">   
+        <div class="overlay" id="overlay"></div>
         <div class="top-content">
-            <a href="index.html"><img src="img/logo.svg" alt="Логотип 'Друг для Друга'" class="logo"></a>           
+            <a href="index.html"><img src="img/Logo-orange.svg" alt="Логотип 'Друг для Друга'" class="logo"></a>
+            <div class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <nav class="navbar">
                 <ul class="nav-menu">
                     <li class="nav-item dropdown">
                         <span class="menu-title">Питомцы</span>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Ищут дом</a></li>
-                            <li><a href="#">Счастливые истории</a></li>
+                            <li><a href="pets.html">Ищут дом</a></li>
+                            <li><a href="happy-stories.html">Счастливые истории</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="menu-title">Приюты</a>
+                        <a href="shelters.html" class="menu-title">Приюты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="how-to-help.html" class="menu-title">Как помочь?</a>
                     </li>
                     <li class="nav-item dropdown">
                         <span class="menu-title">Полезная информация</span>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Полезные статьи</a></li>
-                            <li><a href="#">Зоозащитные организации</a></li>
+                            <li><a href="vetclinics.html">Ветеринарные клиники</a></li>
+                            <li><a href="articles.html">Полезные статьи</a></li>
+                            <li><a href="zoo-organizations.html">Зоозащитные организации</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="menu-title">О нас</a>
+                        <a href="about-us.html" class="menu-title">О нас</a>
                     </li>
                 </ul>
             </nav>
-
-        </div>  
+        </div>
     </header>
    
     <main>
@@ -53,17 +62,10 @@
                 <h1>О нас</h1>
             </div>
             <div class="content">
+                <img src="img/close-up-dog-against-blue-background 1 1.png" class="dog">
                 <div class="text-rectangle">
-                    <h5>
-                        Добро пожаловать на наш сайт!
-                    </h5>
-                    <p>
-                        Это пространство, посвященное помощи бездомным животным в Ташкенте и Ташкентской области. Наш проект создан для того, чтобы изменить ситуацию с бездомными животными  к лучшему.
-                    </p>
-                    <div class="bold">
-                        <h5>Вот некоторые из способов, как Вы можете внести свой вклад:</h5>
-                    </div>
-                    
+                    <h5>Добро пожаловать на наш сайт!</h5>
+                    <p>Это пространство, посвященное помощи бездомным животным в Ташкенте и Ташкентской области. Наш проект создан для того, чтобы изменить ситуацию с бездомными животными  к лучшему.</p>
                 </div>
             </div>
         </section>
@@ -167,7 +169,8 @@
         </div>  
       </footer>
 
-    <script type="module" src="./script/form.js"></script> 
-    <script type="module" src="./script/scroll.js"></script> 
+    <!-- <script type="module" src="./script/form.js"></script> 
+    <script type="module" src="./script/scroll.js"></script>  -->
+    <script src="script/burger1.js"></script>
 </body>
 </html>
