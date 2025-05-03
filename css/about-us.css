@@ -28,15 +28,20 @@ h1{
 
 h2{
     font-weight: 400;
-    font-size: 40px;
+    font-size: 75px;
     padding-bottom: 25px;
 }
 
 
 
-h1, h2, h3, h4, h5{
+h3, h4, h5{
     margin: 0;
     line-height: 1.4em;
+}
+
+h1, h2{
+    margin: 0;
+    line-height: 1.2em;
 }
 
 h3{
@@ -159,102 +164,87 @@ p{
     align-self: flex-start; /* Прижимает к верхнему краю */
 }
 
-.content {
-    position: relative; 
-    width: 85%;
-    max-width: 1018px;
-    margin: 0 auto; 
-    display: flex;
-}
 
-
-.content {
-    background-color: #95C7DF;
-    /* padding: 50px 200px; */
-    border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    position: relative;
-    z-index: 1;
-}
-/* .text-rectangle {
-    background-color: #95C7DF;
-    padding: 50px 200px;
-    border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    position: relative;
-    z-index: 1;
+/* .cat{
+    position: absolute;
+    bottom: 0; 
+    right: 1;
+    left: 1;
+    width: 15%; 
+    height: auto;
 } */
 
-.dog-image {
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;    
-    z-index: 2; 
+
+/* .banner{
+    margin: 0 auto;
+    width: 85%;
+} */
+
+
+.content {
+    position: relative; 
+    margin: 0 auto; 
+    display: flex;
+    background-color: #95C7DF;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
 }
 
+
+
+
 .text-rectangle{
+    margin-left: 80px;
     padding-top: 70px;
     padding-right: 30px;
 }
 
-.point{
-    align-items: center;
-    margin: 0 auto;
+
+.mission{
     display: flex;
-    gap: 10%;
-    width: 85%;
-    padding-bottom: 90px;
 }
 
-.point-text{
-    justify-content: start;
-}
-
-.point img{
-    border-radius: 10px;
-}
-
-
-.point h5{
-    font-weight: 600;
-    text-decoration: underline;
-    padding-top: 5px;
-    cursor: pointer;
-}
-
-p{
-    padding-bottom: 10px;
-}
-
-a{
-    color: black;
+.mission-rect {
+    padding: 50px;
+    padding-top: 40px;
+    padding-bottom: 0;
+    /* margin-left: 80px; */
+    width: 812px;
+    display: flex;
+    background-color: #DEBBA4;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+    right: 0;
 }
 
 
-.bulleted-list {
-    list-style-type: circle; 
+.aims-container {
+    position: relative; /* Относительное позиционирование контейнера */
 }
 
-.bulleted-list li {
-    margin-bottom: 10px; 
-    line-height: 1.4em;
+.block {
+    position: absolute; /* Абсолютное позиционирование для каскадного размещения */
+    width: 363px; /* Ширина блока может быть любая по вашему усмотрению */
+    /* padding: 20px; */
 }
 
-.thank{
-    width: 55%;
-    margin: 0 auto;
-    align-items: center;
+.block:nth-child(1) {
+    top: 0px;
+    left: 0px;
 }
 
-.thank h5{
-    font-weight: 600;
-    text-align: center;
+.block:nth-child(2) {
+    top: 75px; /* Смещение по вертикали на 75 пикселей ниже первого блока */
+    left: 418px; /* Смещение по горизонтали справа от первого блока */
 }
 
-.thank h3{
-    text-align: center;
-    padding-top: 5px;
+.block:nth-child(3) {
+    top: 150px; /* Дополнительное смещение на 75 пикселей ниже второго блока */
+    left: 836px; /* Смещение по горизонтали справа от второго блока */
 }
 
 
@@ -262,6 +252,8 @@ a{
 section{
     padding-top: 50px;
     padding-bottom: 50px;
+    width: 85%;
+    margin: 0 auto;
 }
 
 
