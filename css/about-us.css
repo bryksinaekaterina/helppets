@@ -159,12 +159,12 @@ p{
     font-weight: 600;
 }
 
-.dog{
+/* .dog{
     border-radius: 40px;
-    object-fit: cover; /* Делаем так, чтобы картинка полностью покрывала доступное пространство */
-    height: 100%; /* Картинка остается прижатой к верхнему и нижнему краю */
-    align-self: flex-start; /* Прижимает к верхнему краю */
-}
+    object-fit: cover; 
+    height: 100%;
+    align-self: flex-start; 
+} */
 
 
 
@@ -174,6 +174,7 @@ p{
     margin: 0 auto; 
     display: flex;
     background-color: #95C7DF;
+    /* background-image: url('../img/dog-about-us.png')r; */
     border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     position: relative;
@@ -201,7 +202,6 @@ p{
     padding: 50px;
     padding-top: 40px;
     padding-bottom: 0;
-    /* margin-left: 80px; */
     width: 812px;
     display: flex;
     background-color: #DEBBA4;
@@ -224,7 +224,7 @@ p{
 
 
 .projects-aims{
-    position: relative; /* Сделает возможным абсолютное позиционирование дочерних элементов */
+    position: relative; 
 }
 
 .img-rolling {
@@ -282,7 +282,6 @@ h6 {
     margin: 0;
     font-size: 12px;
     margin-bottom: 5px;
-    /* color: #333; */
     font-weight: normal; 
 }
 
@@ -501,9 +500,15 @@ section{
       
     }
 
+     section{
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+
     h1 {
         /* width: 100%; */
         padding: 0;
+        padding-bottom: 15px;
         margin: 0;
         font-size: 64px;
         /* padding-bottom: 150px; */
@@ -582,7 +587,7 @@ section{
 /*Меню-бургер*/
 
 
-    .banner {
+    /* .banner {
         width: 337px;
         height: 410px;
         padding: 0;
@@ -590,45 +595,72 @@ section{
         flex-direction: column;
         margin: 0 auto;
         border-radius: 40px;
-    }
+    } */
+
 
    
-    .black-dog {
+
+    .text-rectangle{
         margin-left: 30px;
-        height: 250px; 
-        width: auto;
+        padding-top: 0;
+        padding-bottom: 30px;
     }
-    
-    .org-info{
-        /* padding-top: 50px;
-        display: flex;
-        gap: 100px;
-        align-items: center; */
+    .content{
         flex-direction: column;
-        gap: 25px;
-        padding-bottom: 50px;
+        width: 338px;
+    }
+    .mission{
+        flex-direction: column;
+        margin-bottom: 0;
     }
     
-    .org img{
-        /* height: 370px;
-        width: auto; */
-        padding: 0;
-        margin: 0;
+    .mission-rect {
+        padding: 25px;
+        padding-top: 30px;
+        padding-bottom: 0;
+        width: 338px;
+        flex-direction: column;
+        border-radius: 40px;
+        z-index: 1;
+        margin-bottom: 0;
     }
 
-    .container {
-        width: 100%;
-        padding: 0 10px;
+    .aims{
+        margin-top: 80px;
+    }
+    
+    .aims-container{
+        flex-direction: column;
+        width: 338px;
+        margin-bottom: 150px;
     }
 
-    .thank {
-        width: 95%;
-    } 
+   .cat{
+    margin-left: 90px;
+    width: 114px;
+   }
 
-    section{
-        padding-bottom: 25px;
-        padding-top: 25px;
+
+   .cat2{
+    position: absolute;
+    top: 430px;
+   }
+
+
+   .img-rolling {
+    /* margin-top: 50px; */
+    position: absolute;
+    width: 210%; 
+    /* height: auto;  */
+    top: -170px;
+    right: 0;
+}
+
+
+    .thread{
+        width: 130%;
     }
+   
 
 
     .footer {
@@ -698,5 +730,36 @@ section{
         padding-right: 5px;
     }    
 
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Центровка блоков по горизонтали */
+    }
+
+    .block {
+        position: static; /* Возвращаем из float к обычному потоку */
+        width: 100%; /* Окупация всей ширины контейнера */
+        max-width: 300px; /* Ограничение максимальной ширины блока */
+        margin-bottom: 10px; /* Отступ между блоками для визуального разделения */
+    }
+
+    .rolling-image {
+        position: static; 
+        width: 200px; 
+        margin-bottom: 20px; /* Отступ между изображением и первым блоком */
+    }
+
+    .content {
+        margin-top: 0; /* Убираем дополнительный отступ сверху после блоков */
+    }
+
+    .cat2{
+        width: 226px;
+    }
+
+    .conf{
+        padding-bottom: 50px;
+    }
 }
 
