@@ -273,6 +273,102 @@ p{
 }
 
 
+.with-form p{
+    font-size: 15px;
+    font-weight: 200;
+}
+
+h6 {
+    margin: 0;
+    font-size: 12px;
+    margin-bottom: 5px;
+    /* color: #333; */
+    font-weight: normal; 
+}
+
+form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: 620px; 
+    width: 100%;
+    transform: translateX(8%); 
+  }
+
+  .form-inputs{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .form input{
+    border-radius: 10px;
+    background: #FDFBF9;
+
+    padding: 15px 0 15px 6px;
+    width: 300px;
+    /* width: 100%; */
+    border: 1px solid #FDFBF9;
+    box-shadow: none;
+  }
+
+.request{
+    max-width: 820px;
+    width: 100%;
+}
+
+
+input, textarea {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px; 
+    font-weight: 500; 
+    color: #000; 
+}
+
+textarea {
+    border-radius: 10px;
+    height: 300px; 
+    background-color: #FDFBF9;
+    padding: 10px; 
+    width: 100%;
+    border: 1px solid #FDFBF9; 
+}
+
+input:focus, textarea:focus{
+    border-color: #DEBBA4;
+    outline: #DEBBA4;
+}
+
+button{
+    height: 75px;
+    min-width: 285px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    color: #fff;
+    background-color: #5082BD;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+button:hover{
+    background-color: #426C9D;
+}
+
+
+.conf{
+    padding-top: 35px;
+    margin: 0 auto;
+    width: 85%;
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+
 section{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -302,7 +398,7 @@ section{
 
 .yarn-thread {
     position: absolute; 
-    top:-38%;
+    top:-40%;
     left: 0; 
     width: 100%; 
     height: auto; 
