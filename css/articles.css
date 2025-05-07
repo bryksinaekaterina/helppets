@@ -184,7 +184,7 @@ h5{
     padding: 20px;
     padding-top: 80px;
     padding-bottom: 0;
-    flex: 1 1 calc(33.33% - 20px); 
+    /* flex: 1 1 calc(33.33% - 20px);  */
     box-sizing: border-box;
     border-radius: 20px;
     min-width: 250px;
@@ -238,7 +238,7 @@ h5{
 
 
   .block:hover, .block-wide:hover{
-    opacity: 80%;
+    background-color: #BED2E0;
   }
 
  /* .blocks {
@@ -290,11 +290,6 @@ section{
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
-
-
-
-
 
 
 
@@ -366,48 +361,6 @@ a{
     text-decoration: none;
     color: black;
 }
-
-/*Меню-бургер*/
-/* .navbar {
-    display: none;
-    position: absolute;
-    top: 70px; 
-    left: 0;
-    width: 100%;
-    background-color: white;
-    padding: 10px 0;
-    z-index: 10;
-}
-
-.nav-menu {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 0;
-}
-
-.nav-item {
-    margin-bottom: 10px;
-}
-
-.burger-menu {
-    display: flex;
-}
-
-
-.navbar.active {
-    display: flex;
-    flex-direction: column;
-}
-
-.dropdown-menu {
-    position: static; 
-}
-
-.dropdown-menu.active {
-    display: block;
-    margin-bottom: 10px; 
-} */
-
 
 
 .burger-menu {
@@ -549,7 +502,29 @@ a{
     /*Меню-бургер*/
 
 
+    .block, .block-wide {
+        margin: 10px; 
+        padding: 20px;
+        padding-top: 30px;
+        padding-bottom: 0;
+        flex: 1 1 calc(33.33% - 20px); 
+        border-radius: 15px;
+        min-width: 107px;
 
+        height: 137px; 
+    }
+
+
+    .block h5, .block-wide h5{
+        font-size: 14px;
+    }
+
+
+    .blocks{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0;
+        padding-bottom: 50px;
+    }
 
     section{
         padding-top: 25px;
