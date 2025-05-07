@@ -135,7 +135,7 @@
         </section>
 
         <section class="with-form">
-            <form class="form">
+            <form class="form" id="contactForm">
                 <div class="form-inputs">
                     <div class="form-group">
                         <h6>Ваше имя:</h6>
@@ -163,8 +163,17 @@
                     <textarea id="message" placeholder="Текст сообщения"></textarea>
                 </div>
             
-                <button>Отправить</button>
+                <button type="submit">Отправить</button>
+
+               
             </form>
+
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <p>Спасибо за сообщение. Мы ответим вам в ближайшее время.</p>
+                </div>
+            </div>
 
             <p class="conf">Нажимая на кнопку, Вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</p>
         </section>
@@ -193,5 +202,6 @@
       </footer>
 
     <script src="script/burger1.js"></script>
+    <script src="script/pop-up.js"></script>
 </body>
 </html>
