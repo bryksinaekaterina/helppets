@@ -179,9 +179,10 @@ h5{
 
 .block, .block-wide {
     background-color: #A5C5DB;
+    text-align: center;
     margin: 10px; 
     padding: 20px;
-    padding-top: 40px;
+    padding-top: 80px;
     padding-bottom: 0;
     flex: 1 1 calc(33.33% - 20px); 
     box-sizing: border-box;
@@ -192,56 +193,53 @@ h5{
     height: 210px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    transition: all 0.5s ease;
 }
 
 .cat-image {
     position: absolute;
-    bottom: 0; /* Прижимает к нижнему краю */
-    left: 1;
-    width: 35%; 
-    height: auto; /* Обеспечивает соотношение сторон */
+    bottom: 0; 
+    left: 0;
+    width: 20%; 
+    margin-left: 50px;
+    height: auto; 
+}
+
+.dog-image{
+    position: absolute;
+    bottom: 0; 
+    right: 0;
+    width: 30%; 
+    /* margin-left: 50px; */
+    height: auto; 
 }
 
 .block h5{
     text-align: center;
 }
 
-/* 
-.block1 { width: 390px; }
-.block2 { width: 285px; }
-.block3 { width: 495px; }
-.block4 { width: 495px; }
-.block5 { width: 705px; } */
 
 
 .blocks {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    max-width: 1000px;
+    grid-gap: 10px;
+    max-width: 85%;
     margin: auto;
     padding-top: 7%;
+    padding-bottom: 120px;
   }
 
-  .block {
-    /* background-color: #add8e6; */
-    /* border-radius: 12px; */
-    /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
-    /* padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 18px;
-    min-height: 100px;
-    position: relative; */
-  }
-
+  
 
   .block-wide{
     grid-column: span 2;
   }
 
+
+  .block:hover, .block-wide:hover{
+    opacity: 80%;
+  }
 
  /* .blocks {
     display: flex;
