@@ -152,7 +152,7 @@ a{
 
 .back{
     margin-left: 7%;
-    /* width: 85%; */
+
     display: flex; 
     justify-content: start;
     cursor: pointer;
@@ -160,8 +160,9 @@ a{
 }
 
 .arrow{
-    padding-top: 7px;
-    padding-right: 5px;
+    margin-top: 10px;
+    margin-right: 5px;
+    height: 13px;
 }
 
 
@@ -170,7 +171,9 @@ a{
     width: 65%;
 }
 
-
+.back h5:hover{
+    text-decoration: underline;
+}
 
 .point{
     align-items: center;
@@ -280,46 +283,6 @@ section{
 }
 
 /*Меню-бургер*/
-.navbar {
-    display: none;
-    position: absolute;
-    top: 70px; /* Adjust based on your layout */
-    left: 0;
-    width: 100%;
-    background-color: white;
-    padding: 10px 0;
-    z-index: 10;
-}
-
-.nav-menu {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 0;
-}
-
-.nav-item {
-    margin-bottom: 10px;
-}
-
-.burger-menu {
-    display: flex;
-}
-
-
-.navbar.active {
-    display: flex;
-    flex-direction: column;
-}
-
-.dropdown-menu {
-    position: static; /* Сделать меню статичным, чтобы оно не перекрывало другие элементы */
-}
-
-.dropdown-menu.active {
-    display: block;
-    margin-bottom: 10px; /* Проверить высоту, чтобы другие элементы опускались ниже */
-}
-
 
 
 /*2*/
@@ -339,14 +302,9 @@ section{
 }
 
 .navbar {
-    position: fixed;
     top: 0;
-    right: -250px; /* расстояние, равное ширине меню */
-    width: 250px;
     height: 100%;
-    background-color: white;
     padding: 20px;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
     transition: right 0.3s ease-in-out;
     z-index: 20;
 }
@@ -373,6 +331,7 @@ section{
     opacity: 1;
     visibility: visible;
 }
+
 
 /*Меню-бургер*/
 
@@ -418,7 +377,7 @@ section{
     display: none;
     position: absolute;
     left: 0;
-    width: 75%;
+    width: 70%;
     background-color: #FFFDFC;
     padding: 10px 0;
     z-index: 10;
@@ -461,9 +420,13 @@ section{
 
     /*Меню-бургер*/
 
+    .back{
+        margin-top: 15px;
+    }
 
-    .banner {
-        padding: 20px;
+    .arrow{
+        margin-top: 7px;
+        height: 10px;
     }
 
 
@@ -476,17 +439,7 @@ section{
         /* margin: 0 auto; */
     }
 
-    .text-rectangle {
-        padding: 30px;
-        border-radius: 20px;
-    }
-
-    .dog-image {
-        margin: 0 auto;
-        top: -25%;
-        width: 261px;
-    }
-
+   
     .point img {
         width: 100%;
         max-width: 500px;
@@ -499,21 +452,94 @@ section{
         padding-bottom: 50px;
     }
 
-    /* .point h5 {
-        font-size: 18px;
-    } */
 
     .container {
         width: 100%;
         padding: 0 10px;
     }
 
-    .thank {
-        width: 95%;
+    .p-container{
+        margin: 0 auto;
+        width: 80%;
     }
+
+    .p-container h2{
+        width: 70%;
+    }
+    
 
     section{
         padding-bottom: 25px;
         padding-top: 25px;
+        width: 85%;
+        margin: 0 auto;
     }
+
+
+    .footer {
+        margin-top: 35px;
+        border-top-left-radius: 50px; 
+        border-top-right-radius: 50px; 
+        position: relative; 
+        padding: 35px 0;
+        padding-bottom: 35px; 
+        overflow-x: hidden;
+      }
+    
+   
+    .footer-content {
+
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .footer-right p{
+        padding-top: 10px;
+    }
+
+    .contacts{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+ 
+    .yarn-thread {
+        position: absolute; 
+        top:-20%;
+        right: 0; 
+        height: 150px;
+        width: auto; 
+        z-index: 10; 
+        position: absolute;
+        left:-10;
+       
+    }
+      
+    .footer-right p{
+        padding-top: 8px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer button{
+        height: 50px;
+        min-width: 202px;
+        font-size: 18px;
+        border-radius: 13px;
+        margin-bottom: 10px;
+
+    }
+       
+    .footer h3{
+        padding-bottom: 5px;
+    }
+    
+    .social{
+        padding-top: 15px;
+        padding-right: 5px;
+    }
+
 }
