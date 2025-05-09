@@ -432,8 +432,7 @@ section{
 
 .yarn-thread {
     position: absolute; 
-    top:-40%;
-    left: 0; 
+    top:-40%; 
     width: 100%; 
     height: auto; 
     z-index: 10; 
@@ -725,27 +724,23 @@ section{
     }
 
     .footer {
+        margin-top: 55px;
         border-top-left-radius: 50px; 
         border-top-right-radius: 50px; 
-        position: relative; 
         padding: 35px 0;
-        padding-bottom: 50px; 
-        overflow-x: hidden;
+        padding-bottom: 35px; 
       }
-     
-      
-    /* .footer-thread{
-        width: 100%;
-        overflow: hidden;
-    }  */
-
+    
+   
     .footer-content {
-
         flex-direction: column;
-        gap: 30px;
+        gap: 20px;
         justify-content: center;
         align-items: center;
-       
+    }
+
+    .footer-right p{
+        padding-top: 10px;
     }
 
     .contacts{
@@ -755,15 +750,10 @@ section{
     }
  
     .yarn-thread {
-        position: absolute; 
-        top:-20%;
-        right: 0; 
+        right: 0;
+        top:-90px;
         height: 150px;
         width: auto; 
-        z-index: 10; 
-        position: absolute;
-        left:-10;
-       
     }
       
     .footer-right p{
