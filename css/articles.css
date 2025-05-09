@@ -509,8 +509,7 @@ a{
         padding: 20px;
         padding-top: 30px;
         padding-bottom: 0;
-        flex: 1 1 calc(33.33% - 20px); 
-        border-radius: 15px;
+        /* flex: 1 1 calc(33.33% - 20px);  */
         min-width: 107px;
 
         height: 137px; 
@@ -526,6 +525,10 @@ a{
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 0;
         padding-bottom: 50px;
+    }
+
+    .block{
+        padding-top: 40px;
     }
 
     section{
