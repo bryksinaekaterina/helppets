@@ -468,6 +468,20 @@ section{
     }
 
 
+
+    .point-finish{
+        width: 97%;
+    
+    }
+    
+    .point-img1{
+        padding-top: 15px;
+        width: 100%;
+        max-width: 500px;
+    }
+    
+
+
     .container {
         width: 100%;
         padding: 0 10px;
