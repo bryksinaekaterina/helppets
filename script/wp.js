@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('https://help-pets.uz/wp-json/wp/v2/pages?slug=welcome-page')
+    fetch('https://help-pets.uz/wp-json/wp/v2/pages?slug=добро-пожаловать')
       .then(response => response.json())
       .then(pages => {
         if (pages.length > 0) {
