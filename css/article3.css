@@ -1,0 +1,550 @@
+@font-face {
+    font-family: 'AmaticSC';
+    src: url('../fonts/AmaticSC-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: #F7F0EA;
+}
+header {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3{
+    font-family: 'AmaticSC', sans-serif; 
+}
+
+h1{
+    text-align: center;
+    font-weight: 400;
+    font-size: 128px;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 75px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+
+
+h1, h2, h3, h4, h5{
+    margin: 0;
+    line-height: 1.4em;
+}
+
+h3{
+    font-weight: 400;
+    font-size: 40px;
+    padding-bottom: 5px;
+}
+
+h5{
+    font-size: 24px;
+    font-weight: 200;
+}
+
+p{
+    margin: 0;
+    line-height: 1.4em;  
+    font-family: 'Montserrat Alternates', sans-serif;;
+}
+
+.p-bold{
+    font-weight: 600;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.top-content{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-top: 20px;
+    width:135px;
+    display:block;
+}
+
+
+
+.navbar {
+    padding: 10px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 54px;
+    display: flex;
+}
+
+.nav-item {
+    position: relative;
+    margin-right: 20px;
+}
+
+.menu-title {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-title:hover {
+    color: #DDA786;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 170px;
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+    border-radius: 13px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    color: #DDA786;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.back{
+    margin-left: 7%;
+
+    display: flex; 
+    justify-content: start;
+    cursor: pointer;
+    margin-bottom: 35px;
+}
+
+.arrow{
+    margin-top: 10px;
+    margin-right: 5px;
+    height: 13px;
+}
+
+
+.p-container{
+    margin: 0 auto;
+    width: 65%;
+}
+
+.back h5:hover{
+    text-decoration: underline;
+}
+
+.point{
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    gap: 3%;
+    width: 85%;
+    padding-bottom: 90px;
+}
+
+.point-text{
+    justify-content: start;
+}
+
+.point img{
+    border-radius: 10px;
+    max-width: 550px;
+}
+
+
+.point h5{
+    font-weight: 600;
+    text-decoration: underline;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.point-last{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.point-last img{
+    padding-top: 20px;
+    border-radius: 10px;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+p{
+    padding-bottom: 10px;
+}
+
+.p-bold{
+    text-align: center;
+    font-weight: 600;
+}
+
+
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.footer {
+    margin-top: 120px;
+    background-color: #D8AD92; 
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px; 
+    position: relative; 
+    padding: 75px 0;
+    padding-bottom: 50px; 
+  }
+  
+.footer-content {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.yarn-thread {
+    position: absolute; 
+    top:-38%; 
+    width: 100%; 
+    height: auto; 
+    z-index: 10; 
+}
+  
+.footer-right p{
+    padding-top: 15px;
+}
+
+.footer button{
+    height: 75px;
+    min-width: 285px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    color: #fff;
+    background-color: #5082BD;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.footer button:hover{
+    background-color: #426C9D;
+}
+
+.footer h3{
+    padding-bottom: 5px;
+}
+
+.social{
+    padding-top: 15px;
+    padding-right: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.social:hover{
+    opacity: 85%;
+}
+
+/*Меню-бургер*/
+
+
+/*2*/
+.burger-menu {
+    padding-top: 50px;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    background-color: black;
+    height: 3px;
+    width: 25px;
+    margin: 4px;
+    transition: all 0.3s;
+}
+
+.navbar {
+    top: 0;
+    height: 100%;
+    padding: 20px;
+    transition: right 0.3s ease-in-out;
+    z-index: 20;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 10;
+}
+
+
+.navbar.active {
+    right: 0;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*Меню-бургер*/
+
+
+@media (max-width: 480px) {
+
+    body{
+        /* margin-left: 40%; */
+        width: 100%;
+    }
+    /* main{
+        margin: 0 auto;
+    } */
+    
+    h1 {
+        font-size: 64px;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+
+    p{
+        font-size: 13px;
+        padding-top: 0;
+    }
+
+    h3{
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+
+    h5{
+        font-size: 18px;
+    }
+
+
+ /*Меню-бургер*/
+ .navbar {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 70%;
+    background-color: #FFFDFC;
+    padding: 10px 0;
+    z-index: 10;
+    }
+
+    .nav-menu {
+        padding-top: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown-menu {
+        position: static; /* Сделать меню статичным, чтобы оно не перекрывало другие элементы */
+    }
+
+    .dropdown-menu.active {
+        display: block;
+        margin-bottom: 10px; /* Проверить высоту, чтобы другие элементы опускались ниже */
+    }
+
+    /*2*/
+
+    .burger-menu {
+        display: flex;
+    }
+
+    /*Меню-бургер*/
+
+    .back{
+        margin-top: 15px;
+    }
+
+    .arrow{
+        margin-top: 7px;
+        height: 10px;
+    }
+
+
+
+    .points{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        /* margin: 0 auto; */
+    }
+
+   
+    .point img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .point {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .p-container{
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .p-container h2{
+        width: 70%;
+    }
+    
+
+    section{
+        padding-bottom: 25px;
+        padding-top: 25px;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+
+    .footer {
+        border-top-left-radius: 50px; 
+        border-top-right-radius: 50px; 
+        padding: 35px 0;
+        padding-bottom: 35px; 
+      }
+    
+   
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-right p{
+        padding-top: 10px;
+    }
+
+    .contacts{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+ 
+    .yarn-thread {
+        right: 0;
+        top:-90px;
+        height: 150px;
+        width: auto; 
+    }
+      
+    .footer-right p{
+        padding-top: 8px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer button{
+        height: 50px;
+        min-width: 202px;
+        font-size: 18px;
+        border-radius: 13px;
+        margin-bottom: 10px;
+
+    }
+       
+    .footer h3{
+        padding-bottom: 5px;
+    }
+    
+    .social{
+        padding-top: 15px;
+        padding-right: 5px;
+    }
+
+}
