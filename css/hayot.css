@@ -162,66 +162,51 @@ p{
 }
 
 
-.pic {
-    width: 1018px;
-    height: 219px;
-    margin: 0 auto;
-    background-image: url('../img/приюты-баннер.png');
-    padding: 50px 200px;
-    border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    position: relative;
-    z-index: 1;
-}
 
-
-.text-overlay {
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    text-align: center; 
-    padding: 20px; 
-}
-
-
-.logos{
+.contacts{
     display: flex;
-    justify-content: space-around;
-    /* flex-direction: space-between; */
 }
 
 
-.shelter{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.back{
+    /* margin-left: 7%; */
+
+    display: flex; 
+    justify-content: start;
     cursor: pointer;
+    margin-bottom: 35px;
 }
 
-.shelter img{
-    transition: filter 0.3s ease;
+.arrow{
+    margin-top: 10px;
+    margin-right: 5px;
+    height: 13px;
 }
 
-.shelter img:hover{
-    filter: opacity(70%);
+.contacts{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    border-radius: 35px; 
+    background-color: #FFFDFC;
+    margin: 0 auto; 
+    margin-top: 15px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
-.shelter h5{
-    padding-top: 10px;
+
+
+a{
+    color: black;
+    text-decoration: none;
 }
 
-.text{
-    margin: 0 auto;
-    width: 85%;
+.back h5:hover{
+    text-decoration: underline;
 }
-
-.text h5{
-    /* width: 85%; */
-    text-align: center;
-    
-}
-
 
 
 section{

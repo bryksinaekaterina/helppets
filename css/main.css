@@ -208,31 +208,55 @@ p{
     background-color: #426C9D;
 }
 
-/* .announcements button{
-    width: 273px;
-} */
+
+
+
+
+.announcement-button{
+    text-align: center;
+    width: 275px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: #fff;
+    background-color: #5082BD;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 20px 50px;
+}
+
+
+.announcement-button:hover{
+    transition: all 0.5s ease;
+    background-color: #426C9D;
+}
 
 .announcements{
     margin: 0 auto;
     width: 85%;
 }
-/* 
-.announce-container{
+
+.announcements-grid{
     
     display: flex;
     justify-content: space-around;
-} */
+}
 
-/* .announce-rect{
+.aannouncement-card{
     border-radius: 20px; 
     background-color: #FBF8F6;
     padding: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
-.announcements button{
+/* .announcements button{
     width: 60%;
 } */
+
+
+
 
 
 .design{
