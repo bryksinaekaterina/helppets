@@ -287,6 +287,69 @@ p{
     display: block;
 }
 
+.pagination-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.pagination-container button{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+    border: none;
+    background-color:  #FFFAF4;  
+    cursor: pointer;
+}
+
+
+.pets-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+
+}
+
+.pet-card {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: #fff; 
+}
+
+.pet-card img {
+    width: 100%;
+    display: block; 
+    height: auto; 
+    border-radius: 10px;
+}
+
+
+.pet-info {
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    padding: 10px; 
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    border-radius: 10px;
+}
+
+.pets-cards-item{
+    max-width: 300px;
+    width: 100%;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.pets-cards-item:hover{
+    scale: 1.05;
+}
+
+.pets-cards-item h3{
+    color:#fff;
+} 
 
 
 
