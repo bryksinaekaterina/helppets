@@ -320,16 +320,91 @@ p{
     width: 100%;
 }
 
-
+a{
+    color: black;
+    font-weight: 600;
+}
 
 .news-section h3{
     margin: 0 auto;
     width: 85%;
 }
 
+.news-scroll-container{
+    overflow-x: auto; /* Добавляет горизонтальный скролл */
+    padding-bottom: 16px; /* Добавляет нижний отступ для удобства прокрутки */
+    max-width: 100%; 
+    box-sizing: border-box;
+}
+
+
+.news-scroll-container::-webkit-scrollbar {
+    width: 50%;
+    height: 3px; /* Высота горизонтальной полосы прокрутки */
+}
+
+.news-scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Цвет фона полосы прокрутки */
+}
+
+.news-scroll-container::-webkit-scrollbar-thumb {
+    background: #888; /* Цвет ползунка полосы прокрутки */
+    border-radius: 4px; /* Радиус округления углов ползунка */
+}
+
+.news-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #5082BD; /* Цвет ползунка при наведении мыши */
+}
+
+
+/* .news{
+    display: flex;
+    align-items: flex-start
+}
+ */
+
+
+.news-grid{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    
+}
+
+
+.news-card{
+    width: 390px;
+}
+
+.news-image{
+    padding-bottom: 25px;
+}
+
+.news-card h5{
+    font-size: 24px;
+    font-weight: 200;
+    padding-bottom: 10px;
+}
+
+.news-text{
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+.news-date{
+    text-align: right;
+    color: #5A5A5A;
+}
+ 
+
+
 .cat-news img{
     height: 406px;
     width: auto;
+    /* max-width: 200px; 
+    height: auto; */
+    display: block;
 }
 
 .happy-stories{
@@ -754,8 +829,54 @@ section{
         width: 180%;
     }
 
+
+
+
+
+    .news-grid{
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        gap: 30px;
+        
+    }
+    
+    .news-image{
+        width: 338px;
+    }
+    
+    .news-card{
+        width: 338px;
+    }
+    
+    .news-image{
+        padding-bottom: 15px;
+    }
+    
+    .news-card h5{
+        font-size: 18px;
+        padding-bottom: 7px;
+    }
+    
+    .news-text{
+        font-size: 13px;
+    }
+    
+    .news-date{
+      font-size: 13px;
+    }
+     
+
+
+
+
+
+
+
+
     .cat-news img{
-        height: 120px;
+        margin-top: 15px;
+        height: 150px;
         width: auto;
     }
 
