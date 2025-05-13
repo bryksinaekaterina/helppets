@@ -247,6 +247,13 @@ p{
     /* justify-content: space-around; */
     overflow-x: auto; /* Включает горизонтальную прокрутку */
     padding-bottom: 15px;
+    cursor: grab;
+}
+
+
+
+.announcements-grid::-webkit-scrollbar {
+    display: none;
 }
 
 .announcement-card{
@@ -315,11 +322,6 @@ p{
 
 
 
-
-.design{
-    width: 100%;
-}
-
 .news-grid a{
     color: black;
     font-weight: 600;
@@ -331,30 +333,30 @@ p{
 }
 
 .news-scroll-container{
-    overflow-x: auto; /* Добавляет горизонтальный скролл */
-    padding-bottom: 16px; /* Добавляет нижний отступ для удобства прокрутки */
+    overflow-x: auto; 
+    padding-bottom: 16px; 
     max-width: 100%; 
     box-sizing: border-box;
 }
 
 
-.news-scroll-container::-webkit-scrollbar {
+/* .news-scroll-container::-webkit-scrollbar {
     width: 50%;
-    height: 5px; /* Высота горизонтальной полосы прокрутки */
+    height: 5px; 
 }
 
 .news-scroll-container::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Цвет фона полосы прокрутки */
+    background: #f1f1f1; 
 }
 
 .news-scroll-container::-webkit-scrollbar-thumb {
-    background: #888; /* Цвет ползунка полосы прокрутки */
-    border-radius: 4px; /* Радиус округления углов ползунка */
+    background: #888; 
+    border-radius: 4px; 
 }
 
 .news-scroll-container::-webkit-scrollbar-thumb:hover {
-    background: #5082BD; /* Цвет ползунка при наведении мыши */
-}
+    background: #5082BD; 
+} */
 
 
 /* .news{
@@ -395,12 +397,19 @@ p{
 .news-date{
     text-align: right;
     color: #5A5A5A;
+    font-size: 14px;
 }
  
+.news-scroll-container{
+    cursor: grab;
+}
 
+.news-scroll-container::-webkit-scrollbar {
+    display: none;
+}
 
 .cat-news img{
-    height: 406px;
+    height: 385px;
     width: auto;
     /* max-width: 200px; 
     height: auto; */
@@ -635,12 +644,19 @@ section{
 /*Меню-бургер*/
 
 
+.design{
+    width: 100%;
+    padding: 0;
+}
 
 
 
 
 @media (max-width: 768px) {
-   
+   body{
+    overflow-x: hidden;
+   }
+
     h1{
         font-size: 64px;
         padding-top: 50px;
@@ -842,8 +858,7 @@ section{
     }
 
 
-
-
+   
 
     .news-grid{
         width: 85%;
@@ -881,7 +896,15 @@ section{
 
 
 
+    .section{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 
+    .design{
+        width: 100%;
+        padding: 0;
+    }
 
 
 
@@ -1019,6 +1042,16 @@ section{
     .dropdown-menu.active {
         display: block;
         margin-bottom: 10px; 
+    }
+
+    .footer-button{
+        padding: 12px 41px;
+        font-size: 18px;
+        border-radius: 13px;
+    }
+
+    .footer-right p{
+        padding-top: 25px;
     }
 }
 
