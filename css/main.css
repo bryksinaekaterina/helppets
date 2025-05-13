@@ -653,9 +653,9 @@ section{
 
 
 @media (max-width: 768px) {
-   body{
+   /* body{
     overflow-x: hidden;
-   }
+   } */
 
     h1{
         font-size: 64px;
