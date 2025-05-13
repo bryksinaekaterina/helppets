@@ -163,9 +163,9 @@ p{
 
 
 
-.contacts{
+/* .contacts{
     display: flex;
-}
+} */
 
 
 .back{
@@ -243,41 +243,47 @@ section{
 }
 
 .footer {
-    margin-top: 120px;;
+    margin-top: 120px;
     background-color: #D8AD92; 
-    border-top-left-radius: 20px; /* Скругление левого верхнего угла */
-    border-top-right-radius: 20px; /* Скругление правого верхнего угла */
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px; 
     position: relative; 
-    padding: 75px 0; 
+    padding: 75px 0;
+    padding-bottom: 50px; 
   }
   
-.footer-content {
+  .footer-content {
     width: 100%;
     padding: 0;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
-
-  
 
 .yarn-thread {
     position: absolute; 
-    /* top: -122px;  */
-    top:-44%;
-    width: 100%; /* Сделайте ширину изображения 100%, чтобы соответствовать футеру */
-    height: auto; /* Сохранить пропорции изображения */
-    z-index: 10; /* Сделать изображение поверх фона футера */
+    top:-40%;
+    /* left: 0;  */
+    width: 100%; 
+    height: auto; 
+    z-index: 10; 
 }
   
+/* .contacts{
+    display: flex;
+    flex-direction: column;
+} */
+
+
 .footer-right p{
-    padding-top: 15px;
+    font-size: 14px;
+    padding-top: 45px;
 }
 
-.footer button{
-    height: 75px;
-    min-width: 285px;
+.footer-button{
+    padding: 17px 62px;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 24px;
     font-weight: 200;
@@ -286,29 +292,28 @@ section{
     border: none;
     border-radius: 17px;
     cursor: pointer;
+    transition: all 0.5s ease;
+    text-decoration: none;
 }
 
-.footer button:hover{
-    transition: all 0.5s ease;
+.footer-button:hover{
     background-color: #426C9D;
 }
 
 
 .footer h3{
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
-.icons{
-    display: flex;
-    gap: 30px;
+.social{
+    padding-top: 15px;
+    padding-right: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
 
-.icon{
-    opacity: 87%;
-}
-
-.icon:hover{
-    opacity: 100%;
+.social:hover{
+    opacity: 85%;
 }
 
 /*Меню-бургер*/
@@ -404,6 +409,33 @@ section{
 
 /*Меню-бургер*/
 
+
+.gallery{
+    overflow-x: auto; /* Добавляет горизонтальный скролл */
+    padding-bottom: 16px; /* Добавляет нижний отступ для удобства прокрутки */
+    max-width: 100%; 
+    box-sizing: border-box;
+}
+
+
+.gallery::-webkit-scrollbar {
+    width: 50%;
+    cursor: pointer;
+    height: 5px; /* Высота горизонтальной полосы прокрутки */
+}
+
+.gallery::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Цвет фона полосы прокрутки */
+}
+
+.gallery::-webkit-scrollbar-thumb {
+    background: #888; /* Цвет ползунка полосы прокрутки */
+    border-radius: 4px; /* Радиус округления углов ползунка */
+}
+
+.gallery::-webkit-scrollbar-thumb:hover {
+    background: #5082BD; /* Цвет ползунка при наведении мыши */
+}
 
 
 @media (max-width: 768px) {

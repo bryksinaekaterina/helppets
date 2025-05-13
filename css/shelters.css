@@ -240,27 +240,27 @@ section{
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
-
-  
 
 .yarn-thread {
     position: absolute; 
-    /* top: -122px;  */
-    top:-44%;
-    width: 100%; /* Сделайте ширину изображения 100%, чтобы соответствовать футеру */
-    height: auto; /* Сохранить пропорции изображения */
-    z-index: 10; /* Сделать изображение поверх фона футера */
+    top:-40%;
+    /* left: 0;  */
+    width: 100%; 
+    height: auto; 
+    z-index: 10; 
 }
   
+
 .footer-right p{
-    padding-top: 15px;
+    font-size: 14px;
+    padding-top: 45px;
 }
 
-.footer button{
-    height: 75px;
-    min-width: 285px;
+.footer-button{
+    padding: 17px 62px;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 24px;
     font-weight: 200;
@@ -269,10 +269,11 @@ section{
     border: none;
     border-radius: 17px;
     cursor: pointer;
+    transition: all 0.5s ease;
+    text-decoration: none;
 }
 
-.footer button:hover{
-    transition: all 0.5s ease;
+.footer-button:hover{
     background-color: #426C9D;
 }
 

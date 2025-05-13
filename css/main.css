@@ -320,7 +320,7 @@ p{
     width: 100%;
 }
 
-a{
+.news-grid a{
     color: black;
     font-weight: 600;
 }
@@ -340,7 +340,7 @@ a{
 
 .news-scroll-container::-webkit-scrollbar {
     width: 50%;
-    height: 3px; /* Высота горизонтальной полосы прокрутки */
+    height: 5px; /* Высота горизонтальной полосы прокрутки */
 }
 
 .news-scroll-container::-webkit-scrollbar-track {
@@ -429,8 +429,15 @@ a{
     cursor: pointer;
     text-decoration: none;
     padding: 20px 50px;
+    margin-bottom: 30px;
 }
  
+
+
+.button-stories:hover{
+    transition: all 0.5s ease;
+    background-color: #426C9D;
+}
 
 section{
     padding-top: 50px;
@@ -447,6 +454,15 @@ section{
     padding: 75px 0;
     padding-bottom: 50px; 
   }
+
+
+.yarn-thread {
+    position: absolute; 
+    top:-40%;
+    width: 100%; 
+    height: auto; 
+    z-index: 10; 
+}
   
 .footer-content {
     width: 100%;
@@ -454,25 +470,19 @@ section{
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 
-.yarn-thread {
-    position: absolute; 
-    top:-40%;
-    /* left: 0;  */
-    width: 100%; 
-    height: auto; 
-    z-index: 10; 
-}
+
   
 .footer-right p{
-    padding-top: 15px;
+    font-size: 14px;
+    padding-top: 45px;
 }
 
-.footer button{
-    height: 75px;
-    min-width: 285px;
+.footer-button{
+    padding: 17px 62px;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 24px;
     font-weight: 200;
@@ -482,11 +492,13 @@ section{
     border-radius: 17px;
     cursor: pointer;
     transition: all 0.5s ease;
+    text-decoration: none;
 }
 
-.footer button:hover{
+.footer-button:hover{
     background-color: #426C9D;
 }
+
 
 .footer h3{
     padding-bottom: 5px;
@@ -695,7 +707,7 @@ section{
         font-size: 18px;
     }
 
-
+    
 
      .hero-section {
         position: relative;
