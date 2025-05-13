@@ -224,7 +224,10 @@ p{
     border-radius: 17px;
     cursor: pointer;
     text-decoration: none;
+    margin: 0 auto;
     padding: 20px 50px;
+    /* margin-top: 45px; */
+    margin-top: auto;
 }
 
 
@@ -241,14 +244,67 @@ p{
 .announcements-grid{
     
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    overflow-x: auto; /* Включает горизонтальную прокрутку */
+    padding-bottom: 15px;
 }
 
-.aannouncement-card{
+.announcement-card{
+    flex-shrink: 0; /* Предотвращает сжатие карточек */
+    margin-right: 20px;
+    width: 390px;
+    height: 500px;
     border-radius: 20px; 
     background-color: #FBF8F6;
-    padding: 30px;
+    padding: 20px 30px;
+    /* padding-top: 20px; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+/* .announcement-logo{
+    width:98px;
+    height: auto;
+} */
+
+
+.announcement-title{
+    font-family: 'Montserrat Alternates';
+    font-weight: 600;
+    font-size: 32px;
+    
+}
+
+.card-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    margin-bottom: 30px;
+}
+
+.announcement-needs{
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 18px;
+}
+
+
+.announcement-date{
+    margin: 20px;
+    /* margin-left: 50%; */
+    margin-left: auto;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.announcement-text{
+    font-size: 16px;
+    line-height: 1.4em;
 }
 
 /* .announcements button{
