@@ -290,6 +290,7 @@ p{
     font-size: 16px;
     font-weight: 600;
     padding-bottom: 18px;
+    line-height: 1.4em;
 }
 
 
@@ -659,25 +660,19 @@ section{
     }
     
     .announcement-card{
-        /* flex-shrink: 0;  */
+
         margin-right: 10px;
-        width: 338px;
+        width: 310px;
         height: 447px;
-        /* border-radius: 20px;  */
-        /* background-color: #FBF8F6; */
+
         padding: 25px;
-        /* padding-top: 20px; */
-        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  */
-        /* align-items: center; */
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* justify-content: center; */
+
     }
     
-    /* .announcement-logo{
-        width:98px;
+    .announcement-logo{
+        width: 80%;
         height: auto;
-    } */
+    } 
     
     
     .announcement-title{
@@ -695,7 +690,7 @@ section{
         display: flex;
         justify-content: start;
         /* align-items: center; */
-        gap: 150px;
+        gap: 130px;
         margin-bottom: 30px;
     }
     
