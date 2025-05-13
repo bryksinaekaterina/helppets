@@ -324,7 +324,7 @@ p{
 
 .news-grid a{
     color: black;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .news-section h3{
