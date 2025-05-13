@@ -67,7 +67,7 @@
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    const targetURL = 'https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0'; // Замените на нужный URL
+    const targetURL = 'https://help-pets.uz/static/shelters.html'; // Замените на нужный URL
 
     fetch('https://help-pets.uz/wp-json/wp/v2/announcement?_embed&acf_format=standard')
         .then(response => response.json())

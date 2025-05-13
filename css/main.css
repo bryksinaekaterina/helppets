@@ -634,6 +634,107 @@ section{
         color: white; /
     }
 
+
+
+
+
+
+
+    .announcement-button{
+        width: 242px;
+        font-size: 17px;
+        border-radius: 13px;
+        padding: 15px 25px;
+   
+    }
+    
+    
+    
+    .announcements-grid{
+        
+        display: flex;
+        /* justify-content: space-around; */
+        overflow-x: auto; /* Включает горизонтальную прокрутку */
+        padding-bottom: 15px;
+    }
+    
+    .announcement-card{
+        /* flex-shrink: 0;  */
+        margin-right: 10px;
+        width: 338px;
+        height: 447px;
+        /* border-radius: 20px;  */
+        /* background-color: #FBF8F6; */
+        padding: 25px;
+        /* padding-top: 20px; */
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  */
+        /* align-items: center; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+    }
+    
+    /* .announcement-logo{
+        width:98px;
+        height: auto;
+    } */
+    
+    
+    .announcement-title{
+        font-family: 'Montserrat Alternates';
+        font-weight: 600;
+        font-size: 28px;
+        
+    }
+
+    .announcement-title{
+        width: 30px;
+    }
+    
+    .card-top{
+        display: flex;
+        justify-content: start;
+        /* align-items: center; */
+        gap: 150px;
+        margin-bottom: 30px;
+    }
+    
+    .announcement-needs{
+        font-size: 13px;
+        font-weight: 600;
+        padding-bottom: 13px;
+    }
+    
+    
+    .announcement-date{
+        margin: 20px;
+        /* margin-left: 50%; */
+        margin-left: auto;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    
+    
+    .announcement-text{
+        font-size: 13px;
+        line-height: 1.4em;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .buttons{
         padding-top: 40px;
         flex-direction: column;
