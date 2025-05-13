@@ -183,7 +183,7 @@ p{
     height: 13px;
 }
 
-.contacts{
+.shelter-contacts{
     display: flex;
     justify-content: space-between;
     padding: 35px;
@@ -198,6 +198,32 @@ p{
 }
 
 
+
+
+.gallery-container {
+    width: 100%; 
+    overflow-x: auto; 
+    white-space: nowrap; /* Убирает перенос строк и располагает все элементы в ряд */
+}
+
+.gallery {
+    display: inline-block; /* Устанавливает inline-блочное отображение для контейнера */
+}
+
+.gallery-item {
+    display: inline-block; 
+    /* width: 200px; */
+    height: auto; 
+    margin-right: 15px; /* Отступы между изображениями */
+}
+
+.gallery-item:last-child {
+    margin-right: 0; /* Последнее изображение без дополнительного отступа справа */
+}
+
+.gallery-container h3{
+    padding-bottom: 35px;
+}
 
 a{
     color: black;

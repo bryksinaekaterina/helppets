@@ -252,8 +252,8 @@ p{
 .announcement-card{
     flex-shrink: 0; /* Предотвращает сжатие карточек */
     margin-right: 20px;
-    width: 390px;
-    height: 500px;
+    width: 370px;
+    height: 540px;
     border-radius: 20px; 
     background-color: #FBF8F6;
     padding: 20px 30px;
@@ -275,7 +275,7 @@ p{
     font-family: 'Montserrat Alternates';
     font-weight: 600;
     font-size: 32px;
-    
+    padding-bottom: 0;
 }
 
 .card-top{
@@ -283,7 +283,7 @@ p{
     justify-content: center;
     align-items: center;
     gap: 120px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .announcement-needs{
@@ -360,7 +360,7 @@ p{
 section{
     padding-top: 50px;
     padding-bottom: 50px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 
