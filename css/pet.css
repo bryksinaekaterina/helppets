@@ -247,94 +247,10 @@ p{
 
 
 
-.checkbox-container {
-    display: flex; 
-    align-items: center;
-    position: relative;
-}
-
-.custom-checkbox {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.checkbox-container label {
-    display: block;
-    width: 39px;
-    height: 39px;
-    border-radius: 12px;
-    background-color: white;
-    cursor: pointer;
-    position: relative;
-}
-
-.checkbox-container label:after {
-    content: '';
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 25px;  
-    height: 25px; 
-    background-image: url('../img/paw.png'); /* Путь до вашего изображения */
-    background-size: contain;
-    background-repeat: no-repeat;
-    transform: translate(-50%, -50%);
-}
-
-.custom-checkbox:checked + label:after {
-    display: block;
-}
-
-.pagination-container{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 40px;
-}
-
-.pagination-container button{
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 18px;
-    border: none;
-    background-color:  #FFFAF4;  
-    cursor: pointer;
-}
-
-.pets-grid{
-    width: 95%;
-    margin: 0 auto;
-    /* display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; */
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Примерная ширина карточки */
-    gap: 25px; 
-}
-
-.need-help-indicator {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: #DC3939;
-    color: white !important;
-    font-size: 22px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-}
 
 
 .pet-card{
     width: 285px;
-    position:relative;
-    padding-bottom: 50px;
 }
 
 
@@ -372,71 +288,6 @@ p{
     background-color: #426C9D;
 }
 
-
-/* 
-.pagination-container{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 40px;
-}
-
-.pagination-container button{
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 18px;
-    border: none;
-    background-color:  #FFFAF4;  
-    cursor: pointer;
-}
-
-
-.pets-cards{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 60px;
-
-}
-
-.pet-card {
-    display: block;
-    position: relative;
-    text-decoration: none;
-    color: #fff; 
-}
-
-.pet-card img {
-    width: 100%;
-    display: block; 
-    height: auto; 
-    border-radius: 10px;
-}
-
-
-.pet-info {
-    position: absolute;
-    bottom: 0; 
-    left: 0; 
-    width: 100%; 
-    padding: 10px; 
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
-    border-radius: 10px;
-}
-
-.pets-cards-item{
-    max-width: 300px;
-    width: 100%;
-    transition: all 0.5s ease;
-    cursor: pointer;
-}
-
-.pets-cards-item:hover{
-    scale: 1.05;
-}
-
-.pets-cards-item h3{
-    color:#fff;
-}  */
 
 
 section{
@@ -658,12 +509,12 @@ section{
     }
 
     .dropdown-menu {
-        position: static; /* Сделать меню статичным, чтобы оно не перекрывало другие элементы */
+        position: static; 
     }
 
     .dropdown-menu.active {
         display: block;
-        margin-bottom: 10px; /* Проверить высоту, чтобы другие элементы опускались ниже */
+        margin-bottom: 10px;
     }
 
     /*2*/
@@ -750,46 +601,4 @@ section{
         padding-right: 5px;
     }
 
-    /* .navbar {
-        display: none;
-        position: absolute;
-        top: 70px; 
-        left: 0;
-        width: 100%;
-        background-color: white;
-        padding: 10px 0;
-        z-index: 10;
-    }
-    
-    .nav-menu {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 0;
-    }
-    
-    .nav-item {
-        margin-bottom: 10px;
-    }
-    
-    .burger-menu {
-        display: flex;
-    }
-    
-    
-    .navbar.active {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .dropdown-menu {
-        position: static; 
-    }
-    
-    .dropdown-menu.active {
-        display: block;
-        margin-bottom: 10px; 
-    } */
 }
-
-    
-

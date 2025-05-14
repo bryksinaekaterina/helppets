@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Помощь бездомным животным</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;800&family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/pets.css">
+</head>
+<body>
+
+    <header class="header" id="header">   
+        <div class="overlay" id="overlay"></div>
+        <div class="top-content">
+            <a href="index.html"><img src="img/Logo-orange.svg" alt="Логотип 'Друг для Друга'" class="logo"></a>
+            <div class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item dropdown">
+                        <span class="menu-title">Питомцы</span>
+                        <ul class="dropdown-menu">
+                            <li><a href="pets.html">Ищут дом</a></li>
+                            <li><a href="happy-stories.html">Счастливые истории</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="shelters.html" class="menu-title">Приюты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="how-to-help.html" class="menu-title">Как помочь?</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <span class="menu-title">Полезная информация</span>
+                        <ul class="dropdown-menu">
+                            <li><a href="vetclinics.html">Ветеринарные клиники</a></li>
+                            <li><a href="articles.html">Полезные статьи</a></li>
+                            <li><a href="zoo-organizations.html">Зоозащитные организации</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about-us.html" class="menu-title">О нас</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="pet-details-container">
+        <button onclick="window.history.back()">Назад</button>
+        <div class="pet-details">
+            <h2 class="pet-name"></h2>
+            <div class="pet-image-container">
+                <img class="pet-image" src="" alt="">
+            </div>
+            <p><span class="pet-gender"></span>, <span class="pet-age"></span></p>
+            <p class="pet-shelter">Приют: <span class="shelter-name"></span></p>
+            <div class="pet-full-description">
+                <h3>Описание:</h3>
+                <p class="description-text"></p>
+            </div>
+            </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+          <img src="img/клубок-нить.png" alt="Клубок с нитью" class="yarn-thread">
+          <div class="footer-content">
+            <a href="index.html"><img src="img/logo-footer.svg" alt="Логотип 'Друг для Друга'" class="logo"></a>
+            <div class="contacts">
+                <h3>Контакты</h3>
+                <p>+998 93 333-33-33</p>
+                <p>example@email</p>
+                <div class="icons">
+                    <img src="img/tg.png" class="social">
+                    <img src="img/insta.png" class="social">
+                </div>
+            </div>
+            <div class="footer-right">
+                <a href="how-to-help.html" class="footer-button">Хочу помочь</a>
+                <p>© 2025. Друг для Друга</p>
+            </div>
+          </div>
+        </div>  
+      </footer>
+
+
+
+    <script>
+        // JavaScript код для получения и отображения деталей питомца будет здесь
+        document.addEventListener('DOMContentLoaded', function() {
+    const petNameElement = document.querySelector('.pet-details .pet-name');
+    const petImageElement = document.querySelector('.pet-details .pet-image');
+    const petGenderElement = document.querySelector('.pet-details .pet-gender');
+    const petAgeElement = document.querySelector('.pet-details .pet-age');
+    const shelterNameElement = document.querySelector('.pet-details .shelter-name');
+    const descriptionTextElement = document.querySelector('.pet-details .description-text');
+
+    // Функция для получения ID из URL
+    function getPetIdFromUrl() {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get('id');
+    }
+
+    const petId = getPetIdFromUrl();
+
+    if (petId) {
+        const apiUrl = `https://help-pets.uz/wp-json/wp/v2/pet/${petId}?_embed&acf_format=standard`;
+
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(pet => {
+                console.log('Данные о питомце:', pet);
+                const acf = pet.acf;
+
+                if (petNameElement) {
+                    petNameElement.textContent = acf?.pet_name || '';
+                }
+                if (petImageElement) {
+                    petImageElement.src = acf?.pet_photo || '';
+                    petImageElement.alt = acf?.pet_name || 'Фото питомца';
+                }
+                if (petGenderElement) {
+                    petGenderElement.textContent = acf?.pet_gender || '';
+                }
+                if (petAgeElement) {
+                    petAgeElement.textContent = acf?.pet_age || '';
+                }
+                if (shelterNameElement) {
+                    shelterNameElement.textContent = acf?.shelter || '';
+                }
+                if (descriptionTextElement) {
+                    descriptionTextElement.textContent = acf?.detailed_description || acf?.description || '';
+                }
+            })
+            .catch(error => {
+                console.error('Ошибка при получении данных о питомце:', error);
+            });
+    } else {
+        console.error('ID питомца не найден в URL.');
+    }
+});
+    </script>
+</body>
+</html>
