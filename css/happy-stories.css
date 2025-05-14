@@ -471,15 +471,7 @@ section{
         text-align: center;
     }
     
-    .footer button{
-        height: 50px;
-        min-width: 202px;
-        font-size: 18px;
-        border-radius: 13px;
-
-    }
-    
-    
+       
     
     .footer h3{
         padding-bottom: 5px;
@@ -489,6 +481,17 @@ section{
         padding-top: 15px;
         padding-right: 5px;
     }
+    
+    .footer-button{
+        padding: 12px 41px;
+        font-size: 18px;
+        border-radius: 13px;
+    }
+
+    .footer-right p{
+        padding-top: 25px;
+    }
+}
 
     /* .navbar {
         display: none;
@@ -529,5 +532,4 @@ section{
         display: block;
         margin-bottom: 10px; 
     } */
-}
 

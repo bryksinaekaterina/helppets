@@ -664,6 +664,19 @@ section{
         padding-right: 5px;
     }
 
+
+
+    .footer-button{
+        padding: 12px 41px;
+        font-size: 18px;
+        border-radius: 13px;
+    }
+
+    .footer-right p{
+        padding-top: 25px;
+    }
+
+
 /* 
     .navbar {
         display: none;

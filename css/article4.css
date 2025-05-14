@@ -546,16 +546,15 @@ section{
         padding-top: 8px;
         align-items: center;
         text-align: center;
+        padding-top: 25px;
     }
     
-    .footer button{
-        height: 50px;
-        min-width: 202px;
+    .footer-button{
+        padding: 12px 41px;
         font-size: 18px;
         border-radius: 13px;
-        margin-bottom: 10px;
-
     }
+
        
     .footer h3{
         padding-bottom: 5px;
