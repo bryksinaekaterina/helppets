@@ -27,10 +27,10 @@ h1{
 }
 
 h2{
-    font-weight: 400;
-    font-size: 40px;
-    text-align: center;
-    padding-bottom: 60px;
+    font-weight: 200;
+    font-size: 32px;
+    /* text-align: center; */
+    padding-bottom: 5px;
 }
 
 
@@ -302,19 +302,28 @@ p{
     cursor: pointer;
 }
 
-.pets-grid{
+/* .pets-grid{
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr)); /* Примерная ширина карточки */
-    /* gap: 25px;  */
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
     width: 95%;
     margin: 0 auto;
-    gap: 20px; /* Используйте для создания промежутков между карточками */
+    gap: 20px; 
    
     padding: 0 10px
-    /* justify-content: center;
-    align-items: center; */
+    
+} */
+
+
+.pets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    width: 85%;
+    margin: 0 auto;
+    place-items: center; /* Центрирует элементы как по вертикали, так и по горизонтали в каждой ячейке */
 }
+
 
 .need-help-indicator {
     position: absolute;
@@ -338,7 +347,7 @@ p{
     width: 285px;
     position:relative;
     padding-bottom: 50px;
-    padding-left: 4%;
+    /* padding-left: 3%; */
 }
 
 
@@ -356,6 +365,10 @@ p{
 .pet-card p{
     margin-bottom: 35px;
 }
+
+
+
+
 
 .pet-details-link{
     padding: 17px 71px;
@@ -376,6 +389,61 @@ p{
     background-color: #426C9D;
 }
 
+
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.pagination-container button,
+.pagination-container span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #333; /* Цвет текста по умолчанию */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-container button:hover {
+    background-color: #EADCD2;
+}
+
+.pagination-container button.active {
+    background-color: #c8a996; /* Цвет активной кнопки */
+    color: white;
+}
+
+.pagination-container .dots {
+    font-size: 18px;
+    color: #777;
+    cursor: default;
+}
+
+.pagination-container .prev,
+.pagination-container .next {
+    padding: 0 10px;
+}
+
+.pagination-container .prev::before {
+    content: '← ';
+}
+
+.pagination-container .next::after {
+    content: ' →';
+}
 
 /* 
 .pagination-container{
@@ -686,6 +754,7 @@ section{
         grid-template-columns: 1fr; /* Одна колонка */
         width: 95%; /* Задаем ширину контейнера (можно другое значение) */
         margin: 0 auto; /* Центрируем контейнер */
+        
     }
 
     section{
@@ -702,11 +771,13 @@ section{
     }
 
 
-    .pet-card{
+    /* .pet-card{
         padding-left: 15%;
+    } */
+
+    .pets-grid{
+        width: 95%;
     }
-
-
 
 
     .footer {

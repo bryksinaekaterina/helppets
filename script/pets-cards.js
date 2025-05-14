@@ -383,34 +383,200 @@
 //     // }
 // });
 
+// document.addEventListener('DOMContentLoaded', function() {
+//     const initialPetsGrid = document.querySelector('.pets-grid');
+//     const animalTypeDropdown = document.querySelector('.filter:nth-child(2) .dropdown-toggle');
+//     const animalTypeMenu = document.querySelector('.filter:nth-child(2) .dropdown-menu');
+//     const shelterDropdown = document.querySelector('.filter:nth-child(3) .dropdown-toggle');
+//     const shelterMenu = document.querySelector('.filter:nth-child(3) .dropdown-menu');
+//     const urgentHelpCheckbox = document.querySelector('#custom-checkbox');
+//     const clearFiltersButton = document.querySelector('.clear-button');
+//     if (clearFiltersButton) {
+//         clearFiltersButton.addEventListener('click', function() {
+//             if (animalTypeDropdown) {
+//                 animalTypeDropdown.textContent = 'Все';
+//             }
+//             if (shelterDropdown) {
+//                 shelterDropdown.textContent = 'Все';
+//             }
+//             if (urgentHelpCheckbox) {
+//                 urgentHelpCheckbox.checked = false;
+//             }
+//             filterPets(); // Вызываем функцию фильтрации, чтобы обновить отображение
+//         });
+//     }
+
+//     let allPets = [];
+
+//     function renderPets(pets, targetGrid) {
+//         targetGrid.innerHTML = '';
+//         pets.forEach(pet => {
+//             const acf = pet.acf;
+//             const petName = acf?.pet_name;
+//             const imageUrl = acf?.pet_photo;
+//             const petGender = acf?.pet_gender;
+//             const petAge = acf?.pet_age;
+//             const needHelp = acf?.need_help;
+
+//             const petCard = document.createElement('div');
+//             petCard.classList.add('pet-card');
+
+//             if (needHelp) {
+//                 const needHelpIndicator = document.createElement('div');
+//                 needHelpIndicator.classList.add('need-help-indicator');
+//                 needHelpIndicator.innerHTML = '!';
+//                 petCard.appendChild(needHelpIndicator);
+//             }
+
+//             const image = document.createElement('img');
+//             image.classList.add('pet-image');
+//             image.alt = petName || 'Фото питомца';
+//             if (imageUrl) {
+//                 image.src = imageUrl;
+//             }
+//             petCard.appendChild(image);
+
+//             const cardBody = document.createElement('div');
+//             cardBody.classList.add('pet-card-body');
+
+//             const name = document.createElement('h3');
+//             name.classList.add('pet-name');
+//             if (petName) {
+//                 name.textContent = petName;
+//             }
+//             cardBody.appendChild(name);
+
+//             const info = document.createElement('p');
+//             let infoParts = [];
+//             if (petGender) {
+//                 infoParts.push(`<span class="pet-gender">${petGender}</span>`);
+//             }
+//             if (petAge) {
+//                 infoParts.push(`<span class="pet-age">${petAge}</span>`);
+//             }
+//             info.innerHTML = infoParts.join(', ');
+//             cardBody.appendChild(info);
+
+//             const detailsLink = document.createElement('a');
+//             detailsLink.href = `pet.html?id=${pet.id}`;
+//             detailsLink.classList.add('pet-details-link');
+//             detailsLink.textContent = 'Подробнее';
+//             cardBody.appendChild(detailsLink);
+
+//             petCard.appendChild(cardBody);
+//             targetGrid.appendChild(petCard);
+//         });
+//     }
+
+//     function filterPets() {
+//         const selectedAnimalType = animalTypeDropdown.textContent === 'Все' ? 'all' : animalTypeDropdown.textContent.toLowerCase();
+//         const selectedShelter = shelterDropdown.textContent === 'Все' ? 'all' : shelterDropdown.textContent;
+//         const isUrgentHelp = urgentHelpCheckbox.checked;
+
+//         const filteredPets = allPets.filter(pet => {
+//             const acf = pet.acf;
+//             const animalMatch = selectedAnimalType === 'all' || acf?.pet_type?.toLowerCase() === selectedAnimalType;
+//             const shelterMatch = selectedShelter === 'all' || acf?.shelter === selectedShelter;
+//             const urgentMatch = !isUrgentHelp || acf?.need_help;
+
+//             return animalMatch && shelterMatch && urgentMatch;
+//         });
+//         renderPets(filteredPets, initialPetsGrid);
+//     }
+
+//     // Настройка обработчиков событий
+//     if (animalTypeMenu) {
+//         animalTypeMenu.querySelectorAll('li').forEach(li => {
+//             li.addEventListener('click', function() {
+//                 animalTypeDropdown.textContent = this.textContent;
+//                 filterPets();
+//             });
+//         });
+//     }
+
+//     if (shelterMenu) {
+//         shelterMenu.querySelectorAll('li').forEach(li => {
+//             li.addEventListener('click', function() {
+//                 shelterDropdown.textContent = this.textContent;
+//                 filterPets();
+//             });
+//         });
+//     }
+
+//     if (urgentHelpCheckbox) {
+//         urgentHelpCheckbox.addEventListener('change', filterPets);
+//     }
+
+//     if (clearFiltersButton) {
+//         clearFiltersButton.addEventListener('click', function() {
+//             animalTypeDropdown.textContent = 'Все';
+//             shelterDropdown.textContent = 'Все';
+//             urgentHelpCheckbox.checked = false;
+//             filterPets();
+//         });
+//     }
+
+//     document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+//         toggle.addEventListener('click', function() {
+//             this.nextElementSibling.classList.toggle('show');
+//         });
+//     });
+
+//     window.addEventListener('click', function(e) {
+//         if (!e.target.matches('.dropdown-toggle')) {
+//             const dropdowns = document.querySelectorAll('.dropdown-menu');
+//             dropdowns.forEach(d => d.classList.remove('show'));
+//         }
+//     });
+
+//     fetch('https://help-pets.uz/wp-json/wp/v2/pet?_embed&acf_format=standard')
+//         .then(response => response.json())
+//         .then(pets => {
+//             allPets = pets;
+//             if (initialPetsGrid) {
+//                 renderPets(allPets, initialPetsGrid);
+
+//                 // Заполнение выпадающего списка приютов
+//                 const shelters = [...new Set(pets.map(pet => pet.acf?.shelter).filter(Boolean))];
+//                 const shelterMenuList = shelterMenu.querySelector('ul');
+//                 if (shelterMenuList) {
+//                     shelters.forEach(shelter => {
+//                         const li = document.createElement('li');
+//                         li.dataset.value = shelter;
+//                         li.textContent = shelter;
+//                         shelterMenuList.appendChild(li);
+//                     });
+//                 }
+//             }
+//         })
+//         .catch(error => {
+//             console.error('Ошибка при получении питомцев:', error);
+//         });
+// });
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
-    const initialPetsGrid = document.querySelector('.pets-grid');
+    const petsGrid = document.querySelector('.pets-grid');
+    const paginationContainer = document.querySelector('.pagination-container');
     const animalTypeDropdown = document.querySelector('.filter:nth-child(2) .dropdown-toggle');
     const animalTypeMenu = document.querySelector('.filter:nth-child(2) .dropdown-menu');
     const shelterDropdown = document.querySelector('.filter:nth-child(3) .dropdown-toggle');
     const shelterMenu = document.querySelector('.filter:nth-child(3) .dropdown-menu');
     const urgentHelpCheckbox = document.querySelector('#custom-checkbox');
     const clearFiltersButton = document.querySelector('.clear-button');
-    if (clearFiltersButton) {
-        clearFiltersButton.addEventListener('click', function() {
-            if (animalTypeDropdown) {
-                animalTypeDropdown.textContent = 'Все';
-            }
-            if (shelterDropdown) {
-                shelterDropdown.textContent = 'Все';
-            }
-            if (urgentHelpCheckbox) {
-                urgentHelpCheckbox.checked = false;
-            }
-            filterPets(); // Вызываем функцию фильтрации, чтобы обновить отображение
-        });
-    }
 
+    const petsPerPage = 8;
     let allPets = [];
+    let currentPage = 1;
 
-    function renderPets(pets, targetGrid) {
-        targetGrid.innerHTML = '';
-        pets.forEach(pet => {
+    function renderPets(pets, page) {
+        petsGrid.innerHTML = '';
+        const startIndex = (page - 1) * petsPerPage;
+        const endIndex = startIndex + petsPerPage;
+        const petsToDisplay = pets.slice(startIndex, endIndex);
+
+        petsToDisplay.forEach(pet => {
             const acf = pet.acf;
             const petName = acf?.pet_name;
             const imageUrl = acf?.pet_photo;
@@ -464,8 +630,51 @@ document.addEventListener('DOMContentLoaded', function() {
             cardBody.appendChild(detailsLink);
 
             petCard.appendChild(cardBody);
-            targetGrid.appendChild(petCard);
+            petsGrid.appendChild(petCard);
         });
+    }
+
+    function renderPagination(totalPets) {
+        paginationContainer.innerHTML = '';
+        const totalPages = Math.ceil(totalPets / petsPerPage);
+
+        if (totalPages > 1) {
+            const prevButton = document.createElement('button');
+            prevButton.textContent = 'Предыдущая';
+            prevButton.addEventListener('click', () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    renderPets(allPets, currentPage);
+                    renderPagination(allPets.length);
+                }
+            });
+            paginationContainer.appendChild(prevButton);
+
+            for (let i = 1; i <= totalPages; i++) {
+                const pageButton = document.createElement('button');
+                pageButton.textContent = i;
+                if (i === currentPage) {
+                    pageButton.classList.add('active');
+                }
+                pageButton.addEventListener('click', () => {
+                    currentPage = i;
+                    renderPets(allPets, currentPage);
+                    renderPagination(allPets.length);
+                });
+                paginationContainer.appendChild(pageButton);
+            }
+
+            const nextButton = document.createElement('button');
+            nextButton.textContent = 'Следующая';
+            nextButton.addEventListener('click', () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    renderPets(allPets, currentPage);
+                    renderPagination(allPets.length);
+                }
+            });
+            paginationContainer.appendChild(nextButton);
+        }
     }
 
     function filterPets() {
@@ -481,10 +690,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
             return animalMatch && shelterMatch && urgentMatch;
         });
-        renderPets(filteredPets, initialPetsGrid);
+        currentPage = 1; // Сбрасываем на первую страницу после фильтрации
+        renderPets(filteredPets, currentPage);
+        renderPagination(filteredPets.length);
     }
 
-    // Настройка обработчиков событий
+    // Настройка обработчиков событий фильтров (остаются прежними)
     if (animalTypeMenu) {
         animalTypeMenu.querySelectorAll('li').forEach(li => {
             li.addEventListener('click', function() {
@@ -533,20 +744,19 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.json())
         .then(pets => {
             allPets = pets;
-            if (initialPetsGrid) {
-                renderPets(allPets, initialPetsGrid);
+            renderPets(allPets, currentPage);
+            renderPagination(allPets.length);
 
-                // Заполнение выпадающего списка приютов
-                const shelters = [...new Set(pets.map(pet => pet.acf?.shelter).filter(Boolean))];
-                const shelterMenuList = shelterMenu.querySelector('ul');
-                if (shelterMenuList) {
-                    shelters.forEach(shelter => {
-                        const li = document.createElement('li');
-                        li.dataset.value = shelter;
-                        li.textContent = shelter;
-                        shelterMenuList.appendChild(li);
-                    });
-                }
+            // Заполнение выпадающего списка приютов (остается прежним)
+            const shelters = [...new Set(pets.map(pet => pet.acf?.shelter).filter(Boolean))];
+            const shelterMenuList = shelterMenu.querySelector('ul');
+            if (shelterMenuList) {
+                shelters.forEach(shelter => {
+                    const li = document.createElement('li');
+                    li.dataset.value = shelter;
+                    li.textContent = shelter;
+                    shelterMenuList.appendChild(li);
+                });
             }
         })
         .catch(error => {

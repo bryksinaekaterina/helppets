@@ -265,9 +265,43 @@ p{
     font-weight: 600;
 }
 
-.pet-card p{
+/* .pet-card p{
     margin-bottom: 35px;
+} */
+
+.pet-shelter{
+    font-size: 24px;
+    font-weight: 600;
 }
+
+.left-info{
+    width: 705px;
+}
+
+.pet-details {
+    display: flex; /* Включаем Flexbox для .pet-details */
+    flex-direction: row; 
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    align-items: flex-start; /* Выравниваем элементы по верхнему краю */
+}
+
+.left-info {
+    /* Ваши стили для текстовой информации */
+    flex-grow: 1; /* Занимает оставшееся пространство */
+    margin-right: 20px; /* Добавляем отступ справа от текста */
+}
+
+.pet-image-container {
+    /* Ваши стили для контейнера изображения */
+    /* Можно задать ширину, если необходимо */
+}
+
+.pet-image {
+    /* Ваши стили для изображения */
+    max-width: 300px; /* Примерная максимальная ширина изображения */
+    height: auto;
+}
+
 
 .pet-details-link{
     padding: 17px 71px;
@@ -288,7 +322,9 @@ p{
     background-color: #426C9D;
 }
 
-
+.pet-details-container{
+    display: flex;
+}
 
 section{
     padding-top: 50px;
