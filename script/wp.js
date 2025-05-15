@@ -66,7 +66,7 @@
 // });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const targetURL = 'https://help-pets.uz/static/shelters.html'; // Замените на нужный URL
+    const targetURL = 'https://help-pets.uz/shelters.html'; 
 
     fetch('https://help-pets.uz/wp-json/wp/v2/announcement?_embed&acf_format=standard')
         .then(response => response.json())
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const announcementsGrid = document.querySelector('.announcements-grid');
             if (announcementsGrid) {
                 posts.forEach(post => {
-                    console.log('Post data:', post); // <-- Добавлено
+                    console.log('Post data:', post); 
 
                     const acf = post.acf;
 
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     const title = document.createElement('h3');
                     title.classList.add('announcement-title');
-                    console.log('Title element:', title); // <-- Добавлено
+                    console.log('Title element:', title); 
                     title.textContent = acf.shelter_name || '';
 
                     const logo = document.createElement('div');
@@ -103,17 +103,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     const needs = document.createElement('p');
                     needs.classList.add('announcement-needs');
-                    console.log('Needs element:', needs); // <-- Добавлено
+                    console.log('Needs element:', needs); 
                     needs.textContent = `Требуется: ${acf.help_needed || ''}`;
 
                     const text = document.createElement('p');
                     text.classList.add('announcement-text');
-                    console.log('Text element:', text); // <-- Добавлено
+                    console.log('Text element:', text); 
                     text.textContent = acf.announcement_text || '';
 
                     const date = document.createElement('p');
                     date.classList.add('announcement-date');
-                    console.log('Date element:', date); // <-- Добавлено
+                    console.log('Date element:', date); 
                     date.textContent = `Дата: ${acf.announcement_date || ''}`;
 
                     const link = document.createElement('a');
