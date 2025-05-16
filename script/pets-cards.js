@@ -690,12 +690,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
             return animalMatch && shelterMatch && urgentMatch;
         });
-        currentPage = 1; // Сбрасываем на первую страницу после фильтрации
+        currentPage = 1; 
         renderPets(filteredPets, currentPage);
         renderPagination(filteredPets.length);
     }
 
-    // Настройка обработчиков событий фильтров (остаются прежними)
     if (animalTypeMenu) {
         animalTypeMenu.querySelectorAll('li').forEach(li => {
             li.addEventListener('click', function() {
@@ -747,7 +746,7 @@ document.addEventListener('DOMContentLoaded', function() {
             renderPets(allPets, currentPage);
             renderPagination(allPets.length);
 
-            // Заполнение выпадающего списка приютов (остается прежним)
+            // Заполнение выпадающего списка приютов 
             const shelters = [...new Set(pets.map(pet => pet.acf?.shelter).filter(Boolean))];
             const shelterMenuList = shelterMenu.querySelector('ul');
             if (shelterMenuList) {
@@ -763,3 +762,13 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Ошибка при получении питомцев:', error);
         });
 });
+
+
+
+
+
+
+
+    // В основном блоке .then() после получения данных:
+    // renderPets(allPets, currentPage);
+    // renderPagination(allPets.length);

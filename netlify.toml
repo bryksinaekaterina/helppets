@@ -1,7 +1,0 @@
-[build]
-  functions = "netlify/functions"  # Путь к папке с функциями
-
-[[redirects]]
-  from = "/.netlify/functions/*"
-  to = "/.netlify/functions/:splat"
-  status = 200

@@ -25,6 +25,7 @@ h1{
     text-align: center;
     font-weight: 400;
     font-size: 128px;
+    padding-bottom: 50px;
 }
 
 h2{
@@ -155,6 +156,80 @@ a{
 
 
 
+.happy-stories-grid{
+    display: flex;
+    gap: 30px
+}
+
+
+.story-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.happy-stories{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.happy-story-card {
+    width: 550px;
+    padding-bottom: 50px;
+   
+}
+
+.story-image {
+    padding-bottom: 40px;
+}
+
+.story-title {
+    padding-bottom: 20px;
+}
+
+.story-details-button {
+    background-color: #F7F0EA;
+    border: none;
+    margin-top: 10px;
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.button-stories{
+    
+    font-size: 20px;
+    color: #fff;
+    background-color: #5082BD;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 25px 50px;
+    /* justify-content: center; */
+
+    display: flex
+;
+    width: 30%;
+    justify-content: center;
+    margin: 0 auto;
+}
+ 
+
+
+.button-stories:hover{
+    transition: all 0.5s ease;
+    background-color: #426C9D;
+}
+
+
+
+
+
 
 
 .pagination-container{
@@ -176,9 +251,13 @@ a{
 
 
 
+
+
 section{
     padding-top: 50px;
     padding-bottom: 50px;
+    width: 85%;
+    margin: 0 auto;
 }
 
 
@@ -204,7 +283,7 @@ section{
 
 .yarn-thread {
     position: absolute; 
-    top:-40%;
+    top:-38%;
     /* left: 0;  */
     width: 100%; 
     height: auto; 
@@ -356,7 +435,7 @@ section{
         padding: 0;
         margin: 0;
         font-size: 64px;
-        padding-bottom: 150px;
+        padding-bottom: 50px;
         text-align: center;
     }
 
@@ -426,6 +505,35 @@ section{
     }
 
     /*Меню-бургер*/
+
+
+
+    .happy-stories-grid{
+        flex-direction: column;
+        gap: 30px
+    }
+    
+    
+    .happy-story-card {
+        width: 338px;
+        padding-bottom: 5px;
+       
+    }
+    
+    .story-image {
+        padding-bottom: 20px;
+    }
+    
+    .story-title {
+        padding-bottom: 20px;
+    }
+    
+    .story-details-button {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    
+
 
     section{
         padding-bottom: 25px;

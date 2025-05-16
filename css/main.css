@@ -30,8 +30,8 @@ h1{
 
 h2{
     font-weight: 400;
-    font-size: 40px;
-    text-align: center;
+    font-size: 75px;
+    /* text-align: center; */
     padding-bottom: 60px;
 }
 
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6{
 h3{
     font-weight: 400;
     font-size: 40px;
-    padding-bottom: 35px;
+    /* padding-bottom: 35px; */
 }
 
 p{
@@ -327,7 +327,7 @@ p{
     /* font-weight: 600; */
 }
 
-.news-section h3{
+.news-section h2{
     margin: 0 auto;
     width: 85%;
 }
@@ -416,29 +416,68 @@ p{
     display: block;
 }
 
+
+.happy-stories-grid{
+    display: flex;
+    gap: 30px
+}
+
+
+.story-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .happy-stories{
     width: 85%;
     margin: 0 auto;
 }
 
+.happy-story-card {
+    width: 550px;
+    padding-bottom: 50px;
+   
+}
 
+.story-image {
+    padding-bottom: 40px;
+}
+
+.story-title {
+    padding-bottom: 20px;
+}
+
+.story-details-button {
+    background-color: #F7F0EA;
+    border: none;
+    margin-top: 10px;
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
 
 .button-stories{
-    margin-top: 45px;
-    height: 69px;
-    width: 313px;
-    /* width: 100%; */
-    font-family: 'Montserrat Alternates', sans-serif;
+    
     font-size: 20px;
-    font-weight: 200;
     color: #fff;
     background-color: #5082BD;
     border: none;
     border-radius: 17px;
     cursor: pointer;
     text-decoration: none;
-    padding: 20px 50px;
-    margin-bottom: 30px;
+    padding: 25px 50px;
+    /* justify-content: center; */
+
+    display: flex
+;
+    width: 30%;
+    justify-content: center;
+    margin: 0 auto;
 }
  
 
@@ -820,6 +859,30 @@ section{
     }
 
 
+    .happy-stories-grid{
+        flex-direction: column;
+        gap: 30px
+    }
+    
+    
+    .happy-story-card {
+        width: 338px;
+        padding-bottom: 5px;
+       
+    }
+    
+    .story-image {
+        padding-bottom: 20px;
+    }
+    
+    .story-title {
+        padding-bottom: 20px;
+    }
+    
+    .story-details-button {
+        margin-top: 10px;
+        font-size: 16px;
+    }
 
 
 
