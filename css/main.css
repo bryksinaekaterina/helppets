@@ -1017,8 +1017,8 @@ section{
 
     .cat-news img{
         margin-top: 15px;
-        height: 150px;
-        width: auto;
+        width: 100%;
+        height: auto;
     }
 
 /* 
@@ -1031,12 +1031,11 @@ section{
         display: flex;
         flex-wrap: wrap;
         gap: 15px;
-        /* margin: 0 auto;
-        justify-content: space-between; */
+        margin: 0 auto;
     }
 
     .partner-logo{
-        width: 150px;
+        width: 140px;
     }
 
     .footer {
@@ -1176,6 +1175,11 @@ section{
 
     .footer-right p{
         padding-top: 25px;
+    }
+
+    .design img{
+        width: 100%;
+        height: auto;
     }
 }
 
