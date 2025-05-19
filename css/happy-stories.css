@@ -156,11 +156,18 @@ a{
 
 
 
-.happy-stories-grid{
+.all-happy-stories-grid{
     display: flex;
-    gap: 30px
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
+.all-happy-story-card {
+    flex: 1 1 calc(50% - 20px); /* Каждая карточка занимает 50% ширины минус gap */
+    box-sizing: border-box; /* Учитывает padding и border в ширине */
+    padding: 20px; 
+    /* margin-bottom: 20px;  */
+}
 
 .story-image {
     width: 100%;
@@ -514,10 +521,8 @@ section{
     }
     
     
-    .happy-story-card {
-        width: 338px;
-        padding-bottom: 5px;
-       
+    .all-happy-story-card {
+        flex: 1 1 100%; /* На маленьких экранах карточки займут полную ширину */
     }
     
     .story-image {

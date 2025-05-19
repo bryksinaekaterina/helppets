@@ -423,6 +423,8 @@ p{
 }
 
 
+
+
 .story-image {
     width: 100%;
     height: auto;
@@ -437,6 +439,16 @@ p{
 .happy-story-card {
     width: 550px;
     padding-bottom: 50px;
+   
+}
+
+.story-excerpt{
+    padding-bottom: 15px;
+}
+
+.happy-story-card a{
+    color: black;
+    font-weight: 600;
    
 }
 
@@ -473,8 +485,7 @@ p{
     padding: 25px 50px;
     /* justify-content: center; */
 
-    display: flex
-;
+    display: flex;
     width: 30%;
     justify-content: center;
     margin: 0 auto;
@@ -485,6 +496,21 @@ p{
 .button-stories:hover{
     transition: all 0.5s ease;
     background-color: #426C9D;
+}
+
+.partners-section{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.partners{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.partner-logo{
+    width: 180px;
 }
 
 section{
@@ -563,6 +589,8 @@ section{
 .social:hover{
     opacity: 85%;
 }
+
+
 
 
 /* Бургер-меню*/
@@ -701,6 +729,11 @@ section{
         font-size: 64px;
         padding-top: 50px;
         padding-bottom: 15px;
+    }
+
+    h2{
+        font-size: 50px;
+        padding-bottom: 35px;
     }
     
    
@@ -971,7 +1004,16 @@ section{
     }
 
 
-
+    .button-stories{
+        margin-top: 25px;
+        font-size: 18px;
+        border-radius: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: flex;
+        width: 70%;
+    }
+     
 
     .cat-news img{
         margin-top: 15px;
@@ -979,8 +1021,26 @@ section{
         width: auto;
     }
 
+/* 
+    .partners-section{
+        width: 85%;
+        margin: 0 auto;
+    } */
+    
+    .partners{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        /* margin: 0 auto;
+        justify-content: space-between; */
+    }
+
+    .partner-logo{
+        width: 150px;
+    }
+
     .footer {
-        margin-top: 55px;
+        margin-top: 75px;
         border-top-left-radius: 50px; 
         border-top-right-radius: 50px; 
         padding: 35px 0;
