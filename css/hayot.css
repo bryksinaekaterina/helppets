@@ -460,7 +460,42 @@ section{
         padding-bottom: 25px;
     }
     
-  
+    .shelter-logo{
+        width: 222px;
+        height: 222px;
+        margin: 0 auto;
+    }
+
+    .about-shelter{
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .shelter-contacts{
+        /* justify-content: space-between; */
+        flex-direction: column;
+        padding: 25px;
+        border-radius: 25px; 
+        margin: 0 auto; 
+        margin-top: 15px;
+        padding-top: 20px;
+        /* padding-left: 50px; */
+        /* padding-right: 50px;  */
+    }
+    
+    .map{
+        padding-top: 20px;
+        margin: 0 auto;
+        width: 290px;
+        height: 200px;
+    }
+
+
+    .arrow{
+        margin-top: 7px;
+        /* margin-right: 5px;
+        height: 13px; */
+    }
 
     /*Меню-бургер*/
 
