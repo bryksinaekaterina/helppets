@@ -412,28 +412,24 @@ section{
         padding-bottom: 25px;
     }
     
-    .pic{
+    /* .banner-container{
         width: 90%;
         margin: 0 auto;
-    }
+    } */
+
+
+
 
     /*Меню-бургер*/
 
     .pic {
-        width: 85%;
-        /* height: 250px; */
-        margin: 0 auto;
-        background-image: url('../img/still-life-pet-food-assortment.png') no-repeat center center;
-        padding: 50px 200px;
-        border-radius: 40px;
-        z-index: 1;
+        width: 75%;
     }
     
     .logos{
-        /* width: 90%; */
         margin: 0 auto;
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
         /* flex-wrap: wrap; */
     }
 
