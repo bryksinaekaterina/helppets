@@ -412,7 +412,10 @@ section{
         padding-bottom: 25px;
     }
     
-  
+    .pic{
+        width: 90%;
+        margin: 0 auto;
+    }
 
     /*Меню-бургер*/
 
