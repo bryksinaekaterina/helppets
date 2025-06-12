@@ -892,6 +892,8 @@ section{
     }
 
 
+   
+
     .happy-stories-grid{
         flex-direction: column;
         gap: 30px
@@ -917,17 +919,7 @@ section{
         font-size: 16px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
     .buttons{
@@ -998,6 +990,11 @@ section{
         padding-bottom: 25px;
     }
 
+
+     .happy-stories{
+      padding-top: 5px;  
+    }
+
     .design{
         width: 100%;
         padding: 0;
@@ -1027,21 +1024,21 @@ section{
         margin: 0 auto;
     } */
     
-    .partners-section{
+    /* .partners-section{
         margin: 0;
         gap: 5px;
-        /* justify-content: space-around; */
-    }
+    } */
 
     .partners{
-        width: 90%;
+        width: 85%;
         display: flex;
         flex-wrap: wrap;
         gap: 5px;
+         justify-content: space-around;
     }
 
     .partner-logo{
-        width: 115px;
+        width: 130px;
     }
 
     .footer {
@@ -1187,5 +1184,6 @@ section{
         width: 100%;
         height: auto;
     }
+
 }
 
