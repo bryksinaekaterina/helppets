@@ -504,12 +504,13 @@ a{
     .block, .block-wide {
         margin: 10px; 
         padding: 20px;
-        padding-top: 30px;
+        /* padding-top: 30px; */
         padding-bottom: 0;
         /* flex: 1 1 calc(33.33% - 20px);  */
         min-width: 107px;
 
         height: 137px; 
+         padding-top: 0;
     }
 
 
@@ -524,9 +525,9 @@ a{
         padding-bottom: 50px;
     }
 
-    .block{
-        padding-top: 40px;
-    }
+    /* .block{
+        padding-top: 0;
+    } */
 
     section{
         padding-top: 25px;

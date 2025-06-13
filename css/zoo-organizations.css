@@ -191,11 +191,19 @@ p{
     width: 85%;
 }
 
-.org-info{
+.org-info1{
     padding-top: 50px;
     display: flex;
     gap: 100px;
     align-items: center;
+}
+
+.org-info2{
+    padding-top: 50px;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
 
@@ -223,6 +231,11 @@ p{
     flex-direction: column;
     gap: 5px;
     padding-bottom: 17px;
+}
+
+.org a{
+    text-decoration: none;
+    color: #000;
 }
 
 section{
@@ -503,22 +516,30 @@ section{
         width: auto;
     }
     
-    .org-info{
-        /* padding-top: 50px;
-        display: flex;
-        gap: 100px;
-        align-items: center; */
+    .org-info2{
         flex-direction: column;
         gap: 25px;
-        padding-bottom: 50px;
+        padding-bottom: 25px;
+         margin-bottom: 0;
     }
+
+     .org-info1{
+        flex-direction: column-reverse;
+        gap: 25px;
+        padding-bottom: 25px;
+    }
+
     
     .org img{
-        /* height: 370px;
-        width: auto; */
+        height: 300px;
+        width: auto;
         padding: 0;
         margin: 0;
     }
+
+    /* .org-logo{
+        width: 130px;
+    } */
 
     .container {
         width: 100%;
@@ -532,6 +553,10 @@ section{
     section{
         padding-bottom: 25px;
         padding-top: 25px;
+    }
+
+    .org a{
+        font-size: 13px;
     }
 
 
