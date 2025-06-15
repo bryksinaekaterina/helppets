@@ -180,9 +180,10 @@ p{
 
 
 
-.about-pet{
+.pet-details-container{
     width: 85%;
     margin: 0 auto;
+    display: flex;
 }
 
 button{
@@ -300,7 +301,7 @@ button{
     background-color: #426C9D;
 }
 
-.pet-details-container{
+.pet-details{
     display: flex;
 }
 
@@ -545,7 +546,45 @@ section{
 
     /*Меню-бургер*/
 
+    .back{
+        margin-top: 10px;
+    }
 
+    .back-word{
+        font-size: 18px;
+        padding-top: 5px;
+    }
+
+    .about-pet{
+        padding-top: 0;
+    }
+
+    .pet-details{
+        flex-direction: column-reverse;
+        width: 85%;
+    }   
+    
+    /* .description-text{
+        width: 85%;
+    } */
+
+    .left-info{
+        width: 100%;
+    }
+
+    .pet-shelter{
+    font-size: 18px;
+    padding-top: 10px;
+    margin-bottom: 45px;
+    }
+
+    .pet-image{
+        width: 338px;
+    }
+
+    .button{
+        margin: 0 auto
+    }
 
     section{
         padding-top: 25px;
@@ -560,8 +599,8 @@ section{
         border-radius: 65px; 
     }
 
-    .footer {
-        margin-top: 55px;
+   .footer {
+        margin-top: 100px;
         border-top-left-radius: 50px; 
         border-top-right-radius: 50px; 
         padding: 35px 0;
@@ -599,19 +638,19 @@ section{
         text-align: center;
     }
     
-    .footer button{
-        height: 50px;
-        min-width: 202px;
+    .footer-button{
+        padding: 12px 41px;
         font-size: 18px;
         border-radius: 13px;
-        margin-bottom: 10px;
-
-    }
-       
-    .footer p{
-        text-align: center;
     }
 
+    .footer-right p{
+        padding-top: 25px;
+    }
+
+    
+    
+    
     .footer h3{
         padding-bottom: 5px;
     }
@@ -619,6 +658,6 @@ section{
     .social{
         padding-top: 15px;
         padding-right: 5px;
-    }
+    }    
 
 }
