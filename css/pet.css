@@ -139,115 +139,70 @@ p{
 }
 
 
-
-.filters-block{
+/* .back-btn{
+    width: 85%;
     margin: 0 auto;
-    width: 80%;
-} 
-
-/* .filter-caption{
-    padding-top: 30px;
+    padding-bottom: 0;
 } */
 
-
-.pet-count{
-    padding-top: 35px;
-    padding-bottom: 15px;
-    text-align: right;
-}
-
-.filter-container{
-    display: flex;
-    justify-content: space-between;
-    padding: 35px;
-    border-radius: 40px; 
-    background-color: #D8AD92;
-    margin: 0 auto; 
-    margin-top: 15px;
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-}
-
-
-.filter-controls {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-
-.clear-button {
-    background: none;
-    border: none;
-    color: rgb(100, 100, 100); /* Или любой другой цвет текста */
+/* .back-btn button{
     text-decoration: underline;
-    font-family: 'Montserrat Alternates';
+} */
+
+.back{
+    margin-left: 7%;
+    display: flex; 
+    justify-content: start;
     cursor: pointer;
-    padding: 0;
-    font-size: 15px; 
+    margin-bottom: 35px;
+    align-items: center;
 }
 
-.clear-button:hover {
-    color: rgb(15, 15, 15); /* Изменение цвета при наведении, если необходимо */
+.back-word{
+    font-size: 24px;
+    font-weight: 200;
+    text-decoration: none;
+    color: black;
+    padding-top: 5px;
+}
+
+.arrow{
+    /* margin-top: 10px; */
+    margin-right: 5px;
+    height: 13px;
+    /* padding-bottom: 2px; */
+}
+
+
+.back h5:hover{
+    text-decoration: underline;
 }
 
 
 
-.filter {
-    /* margin: 35px; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.about-pet{
+    width: 85%;
+    margin: 0 auto;
 }
 
-.filter-label {
-    display: block;
-    margin-bottom: 10px;
-    margin-top: 10px;
+button{
+    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 600;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-toggle {
-    display: flex;
-    padding: 10px;
-    min-width: 170px;
-    border-radius: 13px;
+    font-size: 20px;
+    background-color: transparent; 
+    border: none; 
     cursor: pointer;
-    background-color: white;
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    z-index: 1000;
-}
-
-.filter li {
-    padding: 10px;
-    cursor: pointer;
-}
-
-.dropdown-menu li:hover {
-    color: #D8AD92;
+    /* padding: 0;  */
 }
 
 
+/* .pet-details-container a{
+    margin: 0 auto;
+} */
 
-
+.button{
+    margin: 0 auto;
+}
 
 .pet-card{
     width: 285px;
@@ -263,6 +218,14 @@ p{
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 32px;
     font-weight: 600;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.pet-gender,
+.pet-age {
+  font-weight: 600; 
+  font-size: 24 px;
 }
 
 /* .pet-card p{
@@ -272,33 +235,48 @@ p{
 .pet-shelter{
     font-size: 24px;
     font-weight: 600;
+    padding-top: 15px;
+    margin-bottom: 45px;
 }
 
 .left-info{
     width: 705px;
 }
 
+
+.button{
+    padding: 17px 62px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    color: #fff;
+    background-color: #5082BD;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: #426C9D;
+}
+
 .pet-details {
-    display: flex; /* Включаем Flexbox для .pet-details */
+    display: flex; 
     flex-direction: row; 
-    justify-content: space-between; /* Распределяем пространство между элементами */
+    justify-content: space-between; 
     align-items: flex-start; /* Выравниваем элементы по верхнему краю */
 }
 
 .left-info {
-    /* Ваши стили для текстовой информации */
-    flex-grow: 1; /* Занимает оставшееся пространство */
-    margin-right: 20px; /* Добавляем отступ справа от текста */
+    flex-grow: 1; 
+    margin-right: 20px; 
 }
 
-.pet-image-container {
-    /* Ваши стили для контейнера изображения */
-    /* Можно задать ширину, если необходимо */
-}
 
 .pet-image {
-    /* Ваши стили для изображения */
-    max-width: 300px; /* Примерная максимальная ширина изображения */
+    max-width: 400px; 
     height: auto;
 }
 
@@ -331,9 +309,15 @@ section{
     padding-bottom: 50px;
 }
 
+.back-btn{
+    padding-bottom: 0;
+}
 
 
-
+.pet-image{
+    width: 490px;
+    height: auto;
+}
 
 .footer {
     margin-top: 150px;

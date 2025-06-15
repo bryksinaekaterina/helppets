@@ -6,7 +6,7 @@
     <title>Помощь бездомным животным</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;800&family=Montserrat:wght@900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/pets.css">
+    <link rel="stylesheet" href="css/pet.css">
 </head>
 <body>
 
@@ -50,26 +50,39 @@
         </div>
     </header>
 
-
-    <div class="pet-details-container">
-        <button onclick="window.history.back()">Назад</button>
-        <div class="pet-details">
-            <div class="left-info">
-                <h2 class="pet-name"></h2>
-                <p><span class="pet-gender"></span>, <span class="pet-age"></span></p>
-               
-                <div class="pet-full-description">
-                    <p class="description-text"></p>
+    <main>
+        <section class="back-btn">
+           <div class="back">
+                <a href="pets.html"><img src="img/arrow1.png" class="arrow"></a> 
+                <h5><a href="pets.html" class="back-word">Назад</a></h5>
+            </div>
+        </section>
+        <section class="about-pet">
+            <div class="pet-details-container">
+       
+                <div class="pet-details">
+                    <div class="left-info">
+                        <h2 class="pet-name"></h2>
+                        <p><span class="pet-gender"></span>, <span class="pet-age"></span></p>
+                    
+                        <div class="pet-full-description">
+                            <p class="description-text"></p>
+                        </div>
+                        <p class="pet-shelter">Приют: <span class="shelter-name"></span></p>
+                        <a href="shelters.html" class="button">Связаться</a>
+                    </div>
+                
+                    <div class="pet-image-container">
+                        <img class="pet-image" src="" alt="">
+                    </div>
                 </div>
-                <p class="pet-shelter">Приют: <span class="shelter-name"></span></p>
-            </div>
-           
-            <div class="pet-image-container">
-                <img class="pet-image" src="" alt="">
-            </div>
-        </div>
         
-    </div>
+            </div>
+          
+        </section>
+
+    </main>
+  
 
 
     <footer class="footer">
