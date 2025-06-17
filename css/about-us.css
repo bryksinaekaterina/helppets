@@ -657,7 +657,7 @@ section{
         padding: 25px;
         padding-top: 30px;
         padding-bottom: 0;
-        width: 338px;
+        width: 100%;
         flex-direction: column;
         border-radius: 40px;
         z-index: 1;
@@ -675,7 +675,7 @@ section{
     }
 
    .cat{
-    margin-left: 90px;
+    margin-left: 120px;
     width: 114px;
    }
 

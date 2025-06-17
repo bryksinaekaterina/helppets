@@ -133,7 +133,6 @@ document.addEventListener('DOMContentLoaded', function() {
         fetch('https://help-pets.uz/wp-json/wp/v2/happy_story?_embed&acf_format=standard&per_page=2')
             .then(response => response.json())
             .then(stories => {
-                console.log('Данные счастливых историй (главная):', stories);
                 stories.forEach(story => {
                     const acf = story.acf;
                     const title = acf?.story_title;
@@ -165,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     const fullTextElement = document.createElement('p');
                     fullTextElement.classList.add('story-full-text');
                     fullTextElement.textContent = fullText || '';
-                    fullTextElement.style.display = 'none'; // Скрываем полный текст
+                    fullTextElement.style.display = 'none'; 
 
                     const detailsButton = document.createElement('button');
                     detailsButton.classList.add('story-details-button');
